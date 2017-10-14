@@ -1,0 +1,375 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18-Oct-2016, 19:09:39
+    Author     : developer
+*/
+@import url(//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Mono:400,700|Roboto+Slab:100,400,700|Roboto:400,700);
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto Slab', serif;
+font-family: 'Montserrat', sans-serif;
+*/
+/*!
+ * White Plum v0.3.0
+ *
+ * Copyright 2013 Divshot, Inc.
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * This theme was built using the Themestrap Bootstrap Theme Kit.
+ * https://github.com/divshot/themestrap
+ */
+body {
+  font-weight: 500;
+}
+.lead {
+  font-weight: 300;
+}
+pre {
+  color: white;
+}
+.h1 small,
+h1 small {
+  font-weight: 500;
+  color: #ff897b;
+}
+.jumbotron .btn-primary {
+  background-color: #ff3c24;
+}
+.jumbotron p {
+  font-weight: 300;
+}
+.nav-pills > li > a:hover,
+.nav-pills > li.active > a {
+  border-radius: 0;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover {
+  border-top: 2px solid #FF5C48;
+}
+.navbar {
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15);
+}
+.navbar-fixed-top,
+.navbar-static-top {
+  border-top: 2px solid #222;
+  box-shadow: 0px -3px 12px rgba(0, 0, 0, 0.5);
+}
+.navbar-fixed-bottom {
+  border-bottom: 2px solid #FF5C48;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.5);
+}
+.content-header {
+  margin: 0;
+  padding: 0 25px;
+  height: 42px;
+}
+.content-header ol.breadcrumb {
+  float: left;
+  position: relative;
+}
+.content-header ol.breadcrumb li {
+  font-size: 1.3em;
+}
+.btn {
+  font-weight: 500;
+  border-radius: 0;
+}
+.btn-default:hover {
+  color: #555555;
+  background-color: #ffffff;
+}
+.book-buttons {
+  text-align: center;
+  margin: 20px 0;
+}
+.book-buttons button.btn.btn-success.book-update-footer {
+  width: 150px;
+}
+button.btn.btn-success.book-update-top {
+  float: right;
+}
+.label {
+  border-radius: 0;
+}
+.pagination > li > a {
+  border-width: 0;
+  border-bottom-width: 3px;
+}
+.pagination > li > a:first-child {
+  border-left-width: 0;
+}
+.panel {
+  border-width: 0;
+  border-top-width: 3px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+}
+.panel-default {
+  border-top-color: #FF5C48;
+}
+.panel-primary {
+  border-radius: 0;
+  border-color: #FF5C48;
+}
+.panel-primary > .panel-heading {
+  color: #fff;
+  background-color: #FF5C48;
+  border-color: #FF5C48;
+  border-radius: 0;
+}
+.panel-heading {
+  background: transparent;
+  border-bottom-color: #eeeeee;
+}
+.panel-footer {
+  background: transparent;
+  border-top-color: #eeeeee;
+}
+.progress {
+  box-shadow: 0 -1px 0px rgba(0, 0, 0, 0.1) inset;
+}
+.well {
+  color: white;
+}
+body {
+  /* add sorting icons to gridview sort links */
+}
+body > .header .logo {
+  font-family: inherit;
+}
+body > .header .navbar .nav > li > a > .badge {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  font-size: 75%;
+}
+body .navbar-nav > .notifications-menu > .dropdown-menu > li .menu > li > a > .fa,
+body .navbar-nav > .notifications-menu > .dropdown-menu > li .menu > li > a > .glyphicon,
+body .navbar-nav > .notifications-menu > .dropdown-menu > li .menu > li > a > .ion {
+  background: none;
+  color: inherit;
+}
+body .user-panel > .info {
+  padding-left: 10px;
+}
+body a.asc:after,
+body a.desc:after {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  padding-left: 5px;
+}
+body a.asc:after {
+  content: "\e151";
+}
+body a.desc:after {
+  content: "\e152";
+}
+body .sort-numerical a.asc:after {
+  content: "\e153";
+}
+body .sort-numerical a.desc:after {
+  content: "\e154";
+}
+body .sort-ordinal a.asc:after {
+  content: "\e155";
+}
+body .sort-ordinal a.desc:after {
+  content: "\e156";
+}
+body .grid-view th {
+  white-space: nowrap;
+}
+body .hint-block {
+  display: block;
+  margin-top: 5px;
+  color: #999;
+}
+body .error-summary {
+  color: #a94442;
+  background: #fdf7f7;
+  border-left: 3px solid #eed3d7;
+  padding: 10px 20px;
+  margin: 0 0 15px;
+}
+body span.glyphicon.glyphicon-trash,
+body span.glyphicon.glyphicon-pencil {
+  font-size: 1.5em;
+}
+body textarea#book-excerpt,
+body textarea#book-recommendation_note,
+body textarea#book-vibe,
+body textarea#book-filmic,
+body textarea#book-length,
+body textarea#book-negatives,
+body textarea#book-market,
+body textarea#book-origin_comment,
+body textarea#book-rights_information,
+body textarea#book-rights_tv_info,
+body textarea#book-rights_film_info,
+body textarea#book-rights_audio_info,
+body textarea#company-notes,
+body textarea#userprofile-about,
+body textarea#userprofile-books_published,
+body textarea#userprofile-wished_you_published {
+  width: 100%;
+}
+body .no-padding-left {
+  padding-left: 0;
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary {
+  background: #00a63e;
+}
+div#update-categories {
+  padding: 10px 30px;
+  max-width: 400px;
+}
+#article-form .article-menu-wrapper {
+  float: right;
+}
+#article-form button#viewArticle {
+  margin-left: 10px;
+}
+#article-form a#go-thumbnail {
+  margin-right: 10px;
+}
+.btn.clipboard-js-init {
+  background-color: #00a65a;
+  color: #fff;
+}
+div#blamed {
+  color: #008000;
+  font-size: 1.3em;
+  background-color: #f3e7e7;
+  padding: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 15px;
+}
+div#book-form #blamed {
+  margin-bottom: 0;
+}
+#book-form .row.r1 {
+  margin-top: 25px;
+}
+#book-form .tab-content,
+#book-form .nav-tabs li.active a {
+  background-color: #eeeeee;
+}
+#book-form .border-lr {
+  border-right: 1px solid #a2a2a2;
+  border-left: 1px solid #a2a2a2;
+  padding: 0 20px;
+}
+#book-form hr {
+  border-top: 1px solid #a2a2a2;
+}
+#book-form .carrousel-options {
+  background-color: #ececec;
+  padding: 15px;
+  margin-bottom: 16px;
+}
+#book-form .form-group.field-book-thumbnail {
+  margin-left: 40px;
+}
+#book-form input#book-counter {
+  max-width: 80px;
+}
+#book-form .field-book-published_at {
+  max-width: 200px;
+}
+#book-form #main-category-tree-input {
+  max-width: 250px;
+}
+#book-form .field-tags .selectize-input {
+  min-height: 113px;
+}
+#book-form button.btn.btn-success.book-update-top,
+#book-form #viewBook {
+  margin-right: 6px;
+}
+#book-form button#modalCreateContact {
+  margin-right: 6px;
+}
+#book-form button#viewPublisherInfo {
+  margin-top: 25px;
+}
+#book-form .row.panel-body {
+  padding: 30px;
+}
+#book-form .row.panel-rights {
+  padding: 30px;
+  min-height: 210px;
+}
+#book-form .row.panel-status {
+  margin: 0;
+  padding: 20px 20px 20px 35px;
+}
+#book-form .kv-tree-wrapper.form-control {
+  border: 1px solid #7d7a7a;
+  background-color: #e2e2e2;
+}
+#book-form .kv-tree-list {
+  background: #e2e2e2;
+}
+#book-form .kv-node-indicators {
+  background-color: #e2e2e2;
+}
+#book-form .kv-has-checkbox .kv-selected > .kv-tree-list .kv-node-detail {
+  background-color: #f7f7f7;
+}
+#book-form .kv-tree-dropdown .kv-header-container {
+  border: none;
+  border-bottom: 1px solid #7d7a7a;
+}
+#book-form #title-col,
+#book-form #author-origin-col {
+  padding-left: 0;
+}
+#book-form .btn-edit-deal {
+  border: none;
+  background: none;
+  color: #00a63e;
+  font-size: 1.4em;
+}
+#book-form span.glyphicon.glyphicon-trash {
+  color: #FF5C48;
+}
+.modal-dialog.modal-sm.owner-notes-list {
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+span.parent-category {
+  font-weight: 600;
+}
+a.title-update {
+  color: #00a63e;
+}
+i.glyphicon.glyphicon-sunglasses {
+  font-size: 2em;
+}
+.rating-container .filled-stars {
+  color: #E7FF47;
+  text-shadow: none;
+  -webkit-text-stroke: 1px #222;
+}
+.theme-lls-rating.rating-xs {
+  font-size: 2em;
+}
+.theme-lls-rating .caption {
+  margin-top: -0.2em;
+}
+.user-create button#btn-cancel-no-save {
+  margin-left: 5px;
+}

@@ -1,0 +1,54 @@
+ul#w0.navbar-nav.navbar-right.guest.nav li {
+    float: none;
+    text-align: center;
+    a {
+        padding-bottom: 0;
+    }
+}
+
+.site-home {
+    .container.home {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 700px;
+        padding-bottom: 50px;
+    }
+    .container-fluid.cards-row {
+        text-align: center;
+        margin: 0 auto;
+        color: @logo-pinki;
+    }
+}
+
+
+svg { height: 100%; width: 100%; margin: 0;}
+
+#svg-logo .base { fill: hsl(145, 63%, 22%); }
+
+#svg-logo .cls-6 {
+    fill: hsl(53, 100%, 44%);
+
+    -webkit-animation-name: glow-green;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-direction: normal;
+
+    animation-name: glow-green;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+
+    -moz-animation: none;
+}
+
+@-webkit-keyframes glow-green {
+    0% { fill: hsl(39, 56%, 93%); }
+    100% { fill: hsl(53, 100%, 44%); }
+}
+
+@keyframes glow-green {
+    0% { fill: hsl(39, 56%, 93%); }
+    100% { fill: hsl(53, 100%, 44%); }
+}

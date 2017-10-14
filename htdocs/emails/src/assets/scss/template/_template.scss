@@ -1,0 +1,147 @@
+// These are the styles to make some of the templates look extra nice.
+// Feel free to remove these styles for production!
+// Body Styles
+
+.body,
+body,
+html {
+    // background: #2E2D2E !important;
+}
+
+img#header-logo {
+    width: 300px;
+}
+
+h1#marked {
+    background-color: #E7FF47;
+    padding: 3px 7px;
+    font-size: 2em;
+    font-weight: 600;
+    margin: 0 auto;
+    width: 320px;
+}
+
+.body-drip {
+    border-top: 8px solid #663399;
+}
+// Full Width Headers
+
+.header {
+    background: #F7F0E3;
+    .columns {
+        padding-bottom: 0;
+    }
+    p {
+        color: #fff;
+        padding-top: 15px;
+    }
+    .wrapper-inner {
+        padding: 20px;
+    }
+    .container {
+        background: transparent;
+    }
+}
+
+.footer {
+    border-top: #DEC500 1px solid;
+    .columns {
+        padding-bottom: 0;
+    }
+    p {
+        font-size: 1em;
+        color: #000;
+        margin: 0;
+        padding: 0;
+        line-height: 1.3em;
+    }
+    .wrapper-inner {
+        padding: 20px;
+    }
+    .container {
+        background: transparent;
+    }
+}
+
+
+
+// Social Media
+table.button.facebook table td {
+    background: #3B5998 !important;
+    border-color: #3B5998;
+}
+
+table.button.twitter table td {
+    background: #1daced !important;
+    border-color: #1daced;
+}
+
+table.button.google table td {
+    background: #DB4A39 !important;
+    border-color: #DB4A39;
+}
+
+.wrapper.secondary {
+    background: #f3f3f3;
+}
+
+
+// book detail
+p#title {
+    color: #FF5C48;
+    font-size: 2em;
+    line-height: 1.1em;
+    margin: 5px 0;
+    padding: 0;
+}
+p#author {
+    font-size: 1.2em;
+    color: #F6F0E2;
+}
+p#categories {
+    background-color: #E7FF47;
+    padding: 3px 7px;
+    font-size: 0.9em;
+    display: inline;
+    font-weight: 700;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+p#submission {
+    color: #02d802;
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.9em;    
+}
+
+th.callout-inner.rights {
+    background: #F6F0E2;
+    padding: 20px;
+    margin: 22px 0px 15px 25px;
+    color: #130101;
+    border: none;
+}
+p#mydeal {
+    background-color: #E7FF47;
+    padding: 5px 9px;
+    font-size: 1.2em;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 11px;
+    text-align: center;
+}
+
+th.callout-inner.recommendation {
+    background: #FF5C48;
+    padding: 20px 25px;
+    margin: 22px 0px 15px 25px;
+    color: #130101;
+    border: none;
+}
+
+th.callout-inner.report {
+    background: #E7FF47;
+    padding: 20px 25px;
+    margin: 0px 0px 60px 25px;
+    color: #2E2D2E;
+    border: none;
+}

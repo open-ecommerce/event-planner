@@ -1,0 +1,266 @@
+@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+.modal-header {
+    padding: 0 15px;
+    border-bottom: 1px solid #e5e5e5;
+    .title-modal {
+        font-size: 1.8em;
+        color: #989494;
+        padding-top: 9px;
+        padding-left: 2px;
+    }
+    button.close {
+        font-size: 4em;
+    }
+}
+
+#view-profile {
+    #wrap-main {
+        padding: 0;
+    }
+
+    figure.profile {
+        font-family: 'Roboto Slab', serif;
+        font-size: 1em;
+        position: relative;
+        float: left;
+        overflow: hidden;
+        /*  margin: 10px 1%;*/
+        min-width: 380px;
+        /*        max-width: 800px;*/
+        width: 100%;
+        color: @text-white;
+        background-color: @gray-background;
+
+    }
+    figure.profile * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all 0.35s ease-in-out;
+        transition: all 0.35s ease-in-out;
+    }
+    figure.profile .image {
+        width: 322px;
+        overflow: hidden;
+        z-index: 1;
+        -webkit-transform: skewX(-15deg);
+        transform: skewX(-15deg);
+    }
+
+    figure.profile .image img {
+        position: relative;
+        display: block;
+        left: -15%;
+        z-index: 1;
+        -webkit-transform: skew(15deg);
+        transform: skew(15deg);
+    }
+    figure.profile:before {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 313px;
+        background: rgba(0, 0, 0, 0.2);
+        -webkit-transform: skewX(-17deg);
+        transform: skewX(-17deg);
+        -webkit-box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
+        box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
+    }
+    figure.profile figcaption {
+        padding: 20px 30px 20px 20px;
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+        width: 50%;
+    }
+    figure.profile figcaption h2,
+    figure.profile figcaption p {
+        margin: 0;
+        text-align: right;
+        padding: 10px 0;
+        width: 100%;
+    }
+    figure.profile figcaption h2 {
+        color: @red-pinky;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.3em;
+        font-weight: 300;
+        text-transform: uppercase;
+        border-bottom: 1px solid rgba(195, 195, 195, 0.33);
+    }
+    figure.profile figcaption h2 span {
+        font-weight: 800;
+    }
+    figure.profile figcaption p {
+        font-size: 0.9em;
+        opacity: 0.8;
+    }
+    figure.profile figcaption .icons {
+        width: 100%;
+        text-align: right;
+    }
+    figure.profile figcaption .icons i {
+        font-size: 26px;
+        padding: 5px;
+        top: 50%;
+        color: #000000;
+        opacity: 0;
+    }
+    figure.profile figcaption a {
+        opacity: 0.3;
+    }
+    figure.profile figcaption a:hover {
+        opacity: 0.8;
+    }
+    figure.profile .position {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: right;
+        padding: 15px 30px;
+        font-size: 1.1em;
+        opacity: 1;
+        font-style: italic;
+        color: @text-black;
+        background: #000000;
+    }
+    figure.profile.red .position {
+        background: @yellow;
+    }
+    figure.profile:hover figcaption,
+        figure.profile.hover figcaption {
+        bottom: 40px;
+    }
+    figure.profile:hover .icons i,
+        figure.profile.hover .icons i {
+        opacity: 1;
+        -webkit-transition-delay: 0.2s;
+        transition-delay: 0.2s;
+    }
+    figure.profile:hover:before,
+        figure.profile.hover:before {
+        -webkit-animation: shadow 0.6s ease-in-out;
+        animation: shadow 0.6s ease-in-out;
+    }
+
+    div#col-detail {
+        background: @red-pinky;
+        min-height: 440px;
+        padding: 35px 0 0 50px;
+        color: @white;
+        float: left;
+        #toolbar {
+            top: 0;
+            right: 0;
+            position: absolute;
+            padding: 13px;
+        }
+        #wrap-detail {
+            width: 100%;
+            background: @red-pinky;
+            .block {
+                margin-bottom: 30px;
+                .title {
+                    font-size: 1.3em;
+                    font-weight: 600;
+                    color: @text-black;
+                }
+                .body{
+                    font-size: 1.2em;
+                    color: @text-white;
+                    font-family: 'Lekton', sans-serif; 
+                }
+            }
+        }
+    }
+
+    div#col-detail-modal {
+        background: @red-pinky;
+        padding: 40px 25px 0 25px;
+        color: @white;
+        display: inline-block;
+
+        #wrap-detail {
+            width: 100%;
+            background: @red-pinky;
+            .block {
+                margin-bottom: 30px;
+                .title {
+                    font-size: 1.3em;
+                    font-weight: 600;
+                    color: @text-black;
+                }
+                .body{
+                    font-size: 1.2em;
+                    color: @text-white;
+                    font-family: 'Lekton', sans-serif; 
+                }
+            }
+        }
+    }
+}
+
+div#modal-profile .modal-body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+button.viewProfileInfo {
+    background: none;
+    border: none;
+}
+
+
+#user-profile-form {
+    label {
+        font-size: 1.3em;
+    }
+    #update-profile {
+        background-color: @gray-background;
+        textarea {
+            width: 100%;
+        }
+        #wrap-main {
+            padding: 50px;
+            background-color: @gray-background;
+            label.control-label {
+                color: #fff;
+            }
+        }
+        #wrap-detail {
+            padding: 35px;
+            background: @red-pinky;
+            min-height: 1224px;
+            #toolbar-update {
+                top: 0;
+                right: 0;
+                position: absolute;
+                padding: 13px;
+            }            
+        }
+        p#lbl-about {
+            color: #fff;
+        }
+        .hint-block {
+            color: #2e2d2e;
+        }
+    }
+    #update-second-row {
+        background-color: #a5a3a5;
+        padding: 10px 30px 30px 30px;
+        input#accountform-username {
+            background-color: #d4d4d4;
+        }    
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }    
+    }
+    #bootom-toolbar {
+        background-color: @gray-background;
+        padding: 10px;
+        button {
+            float: right;
+            margin: 10px;
+        }
+    }
+}

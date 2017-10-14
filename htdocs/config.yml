@@ -1,0 +1,49 @@
+# Your project's server will run on localhost:xxxx at this port
+PROXY: "http://event-planner.dev"
+PORT: 3000
+
+# Autoprefixer will make sure your CSS works with these browsers
+COMPATIBILITY:
+  - "last 2 versions"
+  - "ie >= 9"
+
+# Gulp will reference these paths when it copies files
+PATHS:
+  # Path to compiled assets folder
+  assets: "frontend/web/assets"
+  assetsbackend: "backend/web/assets"
+
+  # Path to dist folder
+  dist: "frontend/web/dist"
+  distbackend: "backend/web/dist"
+
+
+  # Paths to fonts
+  fonts:
+    - "vendor/bower/font-awesome/fonts/**/*"
+    - "vendor/bower/bootstrap/fonts/**/*"
+  # Paths to images folder
+  images: "frontend/web/img/**/*"
+
+  # Paths to Less libraries, which can then be loaded with @import
+  lessstart: "frontend/web/less/app.less"
+  lessstartbackend: "backend/web/less/backend.less"
+
+  lesswatch: "frontend/web/less/**/*.less"
+  lesswatchbackend: "backend/web/less/**/*.less"
+
+  # Paths to JavaScript libraries, which are compined into one file
+  # babelscript:
+
+  js: "frontend/web/js/**/*.js"
+
+
+  # Javascript that do not want to be run through Babel
+  plainscript:
+    # Yii2 scripts
+    - "vendor/yiisoft/yii2/assets/yii.js"
+    - "vendor/yiisoft/yii2/assets/yii.validation.js"
+    - "vendor/yiisoft/yii2/assets/yii.activeForm.js"
+    # Paths to your own project code are here
+    - "frontend/web/js/!(app).js"
+    - "frontend/web/js/app.js"

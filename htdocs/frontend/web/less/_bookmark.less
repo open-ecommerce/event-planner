@@ -1,0 +1,166 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07-Jul-2017, 13:31:11
+    Author     : developer
+*/
+
+#bookmark-index {
+    .panel-primary {
+        .panel-heading {
+            color: #552936;
+            background-color: rgba(86, 42, 55, 0.09);
+            border-color: rgba(86, 42, 55, 0.09);
+            border-radius: 0px;
+        }
+    }
+}
+
+#bookmark-index-mobile {
+    thead {
+        display: none;
+    }    
+    .kv-expand-icon.grid-cases-mobile.kv-state-expanded,
+    .kv-expand-icon.grid-cases-mobile.kv-state-collapsed {
+        text-align: center;
+        font-size: 0.7em;
+        background-color: #552936;
+        width: 65px;
+        margin: 6px auto 0 auto;
+        color: #fff;
+        padding: 1px;
+    }
+
+    .skip-export.kv-expanded-row.grid-cases-mobile .short {
+        text-align: left;
+        line-height: 1.1em;
+        color: #131212;                
+        padding: 5px;
+        font-size: 0.5em;
+        a {
+            color: @reports-loved;
+            margin-left: 2px;
+            display: inline-block;
+        }
+    }
+    // mobile
+    @media (max-width: 480px) {
+        padding: 0px;
+        margin: 0px;       
+        font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue', Helvetica,Arial, sans-serif;  
+        #global-search {
+            padding: 10px 10px 1px 10px;
+        }
+    }        
+
+    div#grid-cases-mobile-pjax thead {
+        display: none;
+    }
+    .kv-expand-icon.grid-cases-mobile.kv-state-expanded,
+    .kv-expand-icon.grid-cases-mobile.kv-state-collapsed {
+        text-align: center;
+        font-size: 0.7em;
+        background-color: #552936;
+        width: 65px;
+        margin: 6px auto 0 auto;
+        color: #fff;
+        padding: 1px;
+    }
+
+    .skip-export.kv-expanded-row.grid-cases-mobile .short {
+        text-align: left;
+        line-height: 1.1em;
+        color: #131212;                
+        padding: 5px;
+        font-size: 0.5em;
+        a {
+            color: @reports-loved;
+            margin-left: 2px;
+            display: inline-block;
+        }
+    }
+
+    tr.book-mobile-row:first-child {
+        .category {
+            border-top: @reports-loved solid 1px;                
+        }
+    }
+
+    td {
+        background-color: #fff;
+        border: none;
+        display: block;
+        text-align: left;
+        padding: 0px 5px;
+        .category {
+            border-top: #552936 solid 2px;
+            border-bottom: @reports-loved solid 1px;
+            padding: 5px 0;
+            font-size: 0.5em;
+            font-weight: 700;
+            /*            font-family: 'Roboto', sans-serif;*/
+            span.book-tag {
+                float: right;
+                color: #fff;
+                padding: 3px;
+                font-size: 0.7em;
+                margin-right: 2px;
+                &.hot { background-color: @reports-hot }
+                &.essential { background-color: @reports-essential }
+                &.loved { background-color: @reports-loved }
+            }
+            span.book-tag-bookmark {
+                float: right;
+                font-size: 1.3em;
+                &.active {color: darken(@green, 20%);}
+                &.inactive {color: darken(@green, 20%);}                            
+
+            }  
+            a.pencil-link {
+                float: right;
+                font-size: 1.1em;
+                margin-top: -6px;
+                padding: 4px;
+                background-color: @green;
+                margin-left: 4px;
+                border: @green 1px solid;
+                color: #fff;
+            }
+        }    
+        .title {
+            color: @gray-darker;
+            padding: 10px 0 5px 0;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            vertical-align: top;
+            font-size: 0.6em;
+            line-height: 1.1em;
+            a {
+                color: @gray-darker;
+            }
+        }
+        .author {
+            padding: 0;
+            font-size: 0.5em;
+            font-weight: 700;
+            font-family: 'Roboto', sans-serif;
+            overflow: hidden;
+            height: 1.1em;
+            color: @reports-loved;                
+            a {
+                color: @reports-loved;
+            }
+        }
+        .updated-at {
+            text-align: right;
+            font-size: 0.5em;
+            padding-right: 3px;
+            font-style: normal;
+        }        
+    }
+
+}
+

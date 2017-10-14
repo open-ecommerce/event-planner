@@ -1,0 +1,29 @@
+# Env
+.env
+
+.htaccess
+
+# composer
+/vendor
+
+node
+node_modules/
+
+# IDE
+.idea
+.buildpath
+.project
+.settings
+
+# windows thumbnail cache
+Thumbs.db
+
+# Mac DS_Store Files
+.DS_Store
+
+# phpunit
+phpunit.phar
+/phpunit.xml
+
+# Vagrant
+/.vagrant

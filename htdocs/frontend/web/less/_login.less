@@ -1,0 +1,135 @@
+nav#main-menu.navbar.guest.login a.navbar-brand {
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.container.login {
+    max-width: 450px;
+    padding: 15px;
+    @media (max-width: 480px) {
+        margin: 0 30px;
+        padding: 0 15px;
+    }      
+}
+
+#login-wraper {
+    text-align: center;
+    margin: 30px auto 0 auto;
+    @media (max-width: 480px) {
+        margin: 0 auto;
+    }     
+}
+
+.login-logo, .register-logo {
+    font-size: 2em;
+    text-align: left;
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: @logo-marron;
+    @media (max-width: 480px) {
+        font-size: 1.4em;
+    }     
+}
+
+.login-box {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    .login-box-body {
+        padding: 45px;
+        margin: 0 auto;
+        position: relative;
+        @media (max-width: 480px) {
+            padding: 5px;
+        }  
+        .no-password-link {
+            margin: 10px;
+            float: right;
+        }
+        .login-button {
+            margin: 25px 0px 8px 0px;                
+        }
+
+    }
+
+.help-block {
+    text-align: center;
+        color: @logo-marron;
+}    
+    
+    input#loginform-identity,
+    input#loginform-password,
+    input#passwordresetrequestform-email,    
+    {
+        background-color: @logo-pinki;
+        border: none;
+        border-radius: 0;
+        height: 42px;
+        font-size: 1.3em;
+        color: @logo-marron;
+    }    
+    ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color:   white;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color:    white;
+        opacity:  1;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color:    white;
+        opacity:  1;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color:    white;
+    }
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color:    white;
+    }
+
+    .btn-login {
+        color: #fff;
+        background-color: @logo-pinki;
+        border-color: #b5a62e;
+        width: 116px;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1.3em;    
+        &:hover {
+            color: @logo-marron;
+        }
+    }
+
+    .btn-reset {
+        color: #fff;
+        background-color: @logo-pinki;
+        border-color: #b5a62e;
+        width: 344px;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1.3em;
+        &:hover {
+            color: @logo-marron;
+        }
+    }
+    .row.reset-pass-button {
+        padding: 40px;
+    }
+
+
+    .form-group.field-loginform-identity label,
+    .form-group.field-loginform-password label,
+    .form-group.field-passwordresetrequestform-email label{
+        float: left;
+        color: @logo-marron;
+    }
+
+    .no-password-link a {
+        color: @logo-marron;
+        font-weight: 600;
+    }
+
+    .checkbox label {
+        color: @logo-marron;
+    }    
+}

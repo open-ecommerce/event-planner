@@ -1,0 +1,492 @@
+@base: #f938ab;
+
+.box-shadow(@style, @c) when (iscolor(@c)) {
+    -webkit-box-shadow: @style @c;
+    box-shadow:         @style @c;
+}
+.box-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
+    .box-shadow(@style, rgba(0, 0, 0, @alpha));
+}
+.box {
+    color: saturate(@base, 5%);
+    border-color: lighten(@base, 30%);
+    div { .box-shadow(0 0 5px, 30%) }
+}
+
+
+.site-index {
+    padding: 30px;
+}
+
+html,
+body {
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-color: @body-bg;
+}
+
+.wrap.guest {
+    .navbar-fixed-top {
+        height: 45px;
+    }
+}
+
+
+.wrap {
+    /*    min-height: 98%;*/
+    height: auto;
+    padding: 0;
+}
+
+.wrap > .container {
+    padding: 10px 15px 10px 15px;
+    margin: 0 auto;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+.no-margins-padding {
+    margin: 0;
+    padding: 0;
+}
+
+#main-menu-collapse ul {
+    @media (max-width: 1000px) {
+        font-size: 0.87em;
+    }
+}
+
+/*!
+ * White Plum v0.3.0
+ *
+ * Copyright 2013 Divshot, Inc.
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * This theme was built using the Themestrap Bootstrap Theme Kit.
+ * https://github.com/divshot/themestrap
+ */
+
+
+
+
+//@import "bootstrap.less";
+
+.box-shadow(@style) {
+    -webkit-box-shadow: @style;
+    -moz-box-shadow: @style;
+    box-shadow: @style
+}
+
+a {
+    color: @logo-marron;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    color: @logo-pinki;
+    text-decoration: underline;
+}
+
+// ---- Typography
+body {
+    font-weight: 500;
+    .main-content {
+        margin: 0 0 10px 0;
+    }
+}
+
+.lead {
+    font-weight: 300;
+}
+
+pre {
+    color: white;
+}
+
+h1 small, .h1 small {
+    font-weight: 500;
+    color: lighten(@brand-primary, 10%);
+}
+
+// ---- Jumbotron
+
+.jumbotron {
+    .btn-primary {
+        background-color: darken(@brand-primary, 7%);
+    }
+
+    p {
+        font-weight: 300;
+    }
+}
+
+// ---- Navs
+
+.nav-pills > li.active > a, .nav-pills > li > a:hover {
+    border-radius: 0;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover {
+    border-top: 2px solid @brand-primary;
+}
+
+// ------ Container mobile
+.container.main-content.mobile {
+    margin-top: 0px;
+}
+
+
+// ---- Navbar
+
+nav#main-menu.noindex .navbar-header {
+    @media (max-width: 480px) {
+        height: 52px;
+        a.navbar-brand {
+            height: 0;
+            padding: 25px 0px 0px 30px;
+            font-size: 1.7em;
+        }
+    }
+}
+.nav > li > a {
+    padding: 10px 10px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    color: @logo-pinki;
+    background-color: transparent;
+    // background-color: @red-pinky;
+}
+
+li.active a {
+    text-decoration: none;
+    color: @logo-pinki;
+    background-color: transparent;
+    // background-color: @red-pinky;
+}
+
+.navbar {
+    //    .box-shadow(0px 1px 6px rgba(0,0,0,0.15));
+    .navbar-header {
+        height: 25px;
+    }
+    a {
+        color: @logo-marron;
+        font-weight: 700;
+        font-size: 1.3em;
+    }
+    @media (max-width: 480px) {
+        margin-bottom: 0px;
+    }       
+
+}
+
+.navbar-toggle {
+    z-index: 100;
+    .icon-bar {
+        background-color: @black;
+    }
+    @media (max-width: 480px) {
+        margin-bottom: -10px;
+    }       
+}
+div#main-menu-collapse {
+    @media (max-width: 767px) {
+        border-bottom: #d88d2a solid 1px;
+        background-color: #faebd7;
+        padding: 0px;
+        width: 100%;
+        margin: 0;
+    }      
+    ul {
+        margin-top: 5px;
+        padding: 0px 15px;
+    }
+}
+.dropdown-menu {
+    background-color: #f6f0e2;
+    li a {
+        color: @logo-marron;
+        font-size: 1.2em;
+        &:hover {
+            color: @logo-pinki;
+            background-color: transparent;
+        }
+    }    
+
+}
+
+
+.navbar-static-top, .navbar-fixed-top {
+    border-top: 2px solid @black;
+    //    .box-shadow(0px -3px 12px rgba(0,0,0,0.5));
+
+    background-color: rgba(252, 221, 5, 0.15);
+}
+
+.navbar-fixed-top {
+    height: 95px;
+}
+
+.navbar-fixed-bottom {
+    border-bottom: 2px solid @brand-primary;
+    //    .box-shadow(0px 3px 12px rgba(0,0,0,0.5));
+}
+
+a.navbar-brand {
+    @media (max-width: 480px) {
+        margin: 0 30px 0 0;
+        height: 120px;
+        padding: 0 15px;
+    }        
+    color: @logo-marron;
+    text-align: right;
+    font-size: 2.3em;
+    height: 55px;
+    margin: 0;
+}
+
+
+nav#main-menu.navbar.clients .navbar-header {
+    @media (max-width: 480px) {
+        height: 52px;
+        a.navbar-brand {
+            height: 0;
+            padding: 5px 0px 0px 15px;
+            font-size: 1.7em;
+            img {
+                max-height: 50px;
+            }
+        }
+    }
+    img {
+        max-height: 60px;
+    }    
+}
+
+nav#main-menu.navbar.navbar-fixed-top.guest a.navbar-brand {
+    padding: 10px;
+    margin: 0;
+    img {
+        max-height: 115%;
+        @media (max-width: 480px) {
+            max-height: 55px;
+        }        
+    }
+}
+
+
+
+// ---- Buttons
+
+.btn {
+    font-weight: 500;
+    border-radius: 0;
+}
+
+.btn-default:hover {
+    color: @gray;
+    background-color: lighten(@brand-primary, 40%);
+}
+
+.btn-success {
+    color: #fff;
+    background-color: @btn-success-bg;
+    border-color: @btn-success-border;
+    &:hover {
+        background-color: @btn-success-hover;
+        border-color: @logo-marron;        
+    }
+}
+
+// ---- Labels
+
+.label {
+    border-radius: 0;
+}
+
+// ---- Pagination
+
+.pagination > li > a {
+    border-width: 0;
+    border-bottom-width: 3px;
+    color: @logo-marron;
+
+    &:hover {
+        color: darken(@logo-pinki, 10%);
+    }
+
+    &:first-child {
+        border-left-width: 0;
+    }
+
+
+}
+
+.pagination > .active > a, 
+.pagination > .active > span, 
+.pagination > .active > a:hover, 
+.pagination > .active > span:hover, 
+.pagination > .active > a:focus, 
+.pagination > .active > span:focus {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: @logo-marron;
+    border-color: lighten(@logo-marron, 20%);
+}    
+
+
+// ---- Panels
+
+.panel {
+    border-width: 0;
+    border-top-width: 3px;
+    .box-shadow(0 1px 10px rgba(0,0,0,0.15));
+}
+
+.panel-default {
+    border-top-color: @brand-primary;
+}
+
+.panel-primary {
+    border-radius: 0px;
+    border-color: @brand-primary;
+    > .panel-heading {
+        color: #fff;
+        background-color: @brand-primary;
+        border-color: @brand-primary;
+        border-radius: 0px;
+    }
+}
+
+.panel-heading {
+    background: transparent;
+    border-bottom-color: @gray-lighter;
+}
+
+.panel-footer {
+    background: transparent;
+    border-top-color: @gray-lighter;
+}
+
+// ---- Progress Bars
+
+.progress {
+    .box-shadow(0 -1px 0px rgba(0,0,0,0.1) inset);
+}
+
+// ---- Well
+
+.well {
+    color: white;
+}
+
+// error and 404 page
+.site-error.container {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    #description {
+        margin: 0 auto;
+        width: 600px;
+        text-align: left;
+        border: 1px dashed @logo-marron;
+        padding: 25px;   
+        #title {
+            font-size: 1.5em;
+            color: @logo-marron;
+        }
+        img#page-not-found {
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+        #error {
+            padding: 10px 0;
+        }        
+    }
+}
+
+

@@ -1,0 +1,283 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21-Oct-2016, 12:49:34
+    Author     : developer
+*/
+
+.slick-slide, .slick-slide * {
+    outline: none !important; 
+}
+
+.report-carrusel {
+    display: block;
+    min-height: 230px;
+
+    .col-lg-2 {
+        padding-left: 0;
+    }    
+
+    .identity {
+        h2 {
+            color: #fff;
+            padding: 15px 0 0 15px;
+            width: 135px;
+            height: 135px;
+            line-height: 27px;
+            font-size: 2em;
+            text-align: left;
+            margin: 0px;
+            font-family: 'Montserrat', sans-serif;
+            @media (max-width: 1200px) {
+                font-size: 1.6em;
+            }
+            
+            @media (max-width: 760px) {
+                padding: 5px 0 5px 10px;
+                width: 48%;
+                height: 41px;
+                line-height: 1.5em;
+                font-size: 1.5em;
+                margin: 0;
+            }        
+        }
+        &:after {
+            left: 91%;
+            top: 50%;
+            border: solid rgba(0, 0, 0, 0);
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-width: 10px;
+            margin-top: -13px;
+            @media (max-width: 760px) {
+                border: none;
+            }        
+        }
+        @media (max-width: 760px) {
+            margin-bottom: 11px;
+        }        
+    }
+
+    .category {
+        padding: 5px 0;
+        font-size: 0.9em;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        a.plus-link {
+            float: right;
+            font-size: 1.7em;
+            margin-top: -4px;
+        }
+        a.pencil-link {
+            float: right;
+            font-size: 1.1em;
+            margin-top: -6px;
+            padding: 4px;
+            background-color: @green;
+            margin-left: 4px;
+            border: @green 1px solid;
+            color: #fff;
+        }
+    }    
+    .title {
+        color: @gray-darker;
+        padding: 5px 0 0 0px;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        vertical-align: top;
+        font-size: 1.3em;
+        line-height: 1.1em;
+        height: 2.5em;
+        a {
+            color: @gray-darker;
+        }
+    }
+    .author {
+        padding: 5px 0;
+        font-size: 1.2em;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        overflow: hidden;
+        height: 2em;
+    }    
+
+
+    &.hot {
+        .hot-line {
+            border-top: #000 solid 2px;
+            margin-bottom: 12px;
+        }
+        .identity {
+            background-color: @reports-hot;
+            &:after {
+                border-left-color: @reports-hot;
+            }
+        }
+        .category {
+            border-top: @reports-hot solid 1px;
+            border-bottom: @reports-hot solid 1px;
+            a.plus-link {
+                color: @reports-hot;
+            }
+        }    
+        .author {
+            color: @reports-hot;
+        }    
+    }
+
+    &.essential {
+        border-top: @gray-dark solid 3px;
+        padding: 20px 0 0 0;
+        @media (max-width: 480px) {
+            border-top: @gray-dark solid 1px;
+        }                        
+        .identity {
+            background-color: @reports-essential;
+            &:after {
+                border-left-color: @reports-essential;
+            }
+        }
+        .category {
+            border-bottom: @reports-essential solid 1px;
+            a.plus-link {
+                color: @reports-essential;
+            }
+        }    
+        .author {
+            color: @reports-essential;
+        }    
+    }
+
+    &.loved {
+        border-top: @gray-dark solid 3px;
+        padding: 10px 0 0 0;
+        @media (max-width: 480px) {
+            border-top: @gray-dark solid 1px;
+            margin-bottom: 20px;
+        }                
+        .identity {
+            background-color: @reports-loved;
+            &:after {
+                border-left-color: @reports-loved;
+            }
+        }
+        .category {
+            border-bottom: @reports-loved solid 1px;
+            a.plus-link {
+                color: @reports-loved;
+            }            
+        }    
+        .author {
+            color: @reports-loved;
+        }    
+    }
+
+    .row.news {
+        margin-top: 30px;
+    }
+
+    &.news {
+        padding: 20px;
+        display: block;
+        background-color: @gray-dark;
+        img {
+            width: 100%;
+            max-height: 140px;
+            margin-bottom: 5px;
+        }
+        .slick-prev:before, .slick-next:before {
+            color: @white;
+        }    
+        a.pencil-link {
+            float: right;
+            font-size: 1.1em;
+            margin-top: 0;
+            padding: 4px;
+            background-color: @green;
+            margin-left: 4px;
+            border: @green 1px solid;
+            color: #fff;
+        }
+
+
+        .identity h2 {
+            color: @reports-news;
+            font-size: 2.4em;
+            line-height: 1em;
+            padding: 10px 0 0 0;
+            @media (max-width: 720px) {
+                font-size: 1.6em;
+                width: 100%;
+            }
+            a {
+                color: @reports-news;
+            }
+        }
+        .category {
+            color: @reports-news;
+            font-size: 1em;
+            paddin-top: 8px;
+            a.plus-link {
+                color: @reports-news;
+                float: right;
+            }            
+        }    
+        .title-news {
+            color: @reports-loved;                
+            font-family: 'Roboto Slab', serif;
+            font-size: 1.2em;
+            line-height: 1.1em;
+            margin: 5px 0px 0 0;
+            min-height: 2.4em;
+            a {
+                color: @reports-loved;                
+            }
+        }    
+        .author {
+            color: #d8cccc;
+            font-size: 1em;
+            font-weight: 400;
+            font-family: 'Roboto Slab', serif;
+            margin: 0 0 7px 0;
+        }    
+        .body-news {
+            color: @white;
+            font-size: 0.9em;
+            font-weight: 100;
+            font-family: 'Roboto Slab', serif;
+            overflow: hidden;
+        }    
+    }
+
+    &.book-detail {
+        background-color: @gray-background-light;
+        min-height: 350px;
+        h2 {
+            color: #FF5C48;
+            font-size: 2.5em;
+            line-height: 1.3em;
+            border-bottom: #000 2px solid;
+            margin: 0 35px 12px 35px;
+        }
+        .hot-line {
+            border-top: #000 solid 2px;
+            margin-bottom: 12px;
+        }
+        .category {
+            border-bottom: @reports-hot solid 1px;
+            a.plus-link {
+                color: @reports-hot;
+            }
+        }    
+        .author {
+            color: @reports-hot;
+        }    
+    }
+
+}
