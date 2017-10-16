@@ -410,7 +410,7 @@ and open the template in the editor.
 div#top-toolbar {
   background-color: transparent;
   width: 100%;
-  margin-top: 80px;
+  margin-top: 0px;
 }
 div#top-toolbar .breadcrumb {
   padding: 8px 15px;
@@ -1816,6 +1816,7 @@ ul#w0.navbar-nav.navbar-right.guest.nav li {
 }
 ul#w0.navbar-nav.navbar-right.guest.nav li a {
   padding-bottom: 0;
+  color: #e30f7f;
 }
 .site-home .container.home {
   text-align: center;
@@ -1862,7 +1863,7 @@ img#logo-aboutus {
   max-height: 95px;
 }
 .container.main-content.main-guest {
-  padding-top: 70px;
+  padding-top: 0px;
 }
 .site-about.clients {
   padding: 100px 50px;
