@@ -34,9 +34,9 @@ class CommunicationController extends Controller {
             $rating = !empty($book->rating) ? str_repeat('⋆',$book->rating) : '';
             
             $model = new Email();
-            $model->name = 'London Literary Scouting';
-            $model->email = 'rebecca@londonliteraryscouting.com';
-            $model->subject = 'LLS Book Report: ' . $book->title . ' '. $rating;
+            $model->name = 'Event Planner';
+            $model->email = 'eduardo@open-ecommerce.org';
+            $model->subject = 'UK Tango Report: ' . $book->title . ' '. $rating;
             $model->body = 'to be replaced';
             
             $userMail = Yii::$app->user->identity->email;

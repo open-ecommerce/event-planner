@@ -1,7 +1,7 @@
 <?php
 
 $config = [
-    'name' => 'London Literary Scouts',
+    'name' => 'Event Planner',
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'extensions' => require(__DIR__ . '/../../vendor/yiisoft/extensions.php'),
     'bootstrap' => ['log'],

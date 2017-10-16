@@ -24,7 +24,6 @@ $this->beginContent('@frontend/views/layouts/_clear.php')
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => Yii::t('frontend', 'Ticket Check-In'), 'url' => ['/ticket/index'], 'visible' => !Yii::$app->user->isGuest],
-            ['label' => Yii::t('frontend', 'Bookmarks'), 'url' => ['/bookmark/index'], 'visible' => !Yii::$app->user->isGuest],
             ['label' => Yii::t('frontend', 'About us'), 'url' => ['/site/about', 'slug' => 'about']],
             ['label' => Yii::t('frontend', 'Login'), 'url' => ['/user/sign-in/login'], 'visible' => Yii::$app->user->isGuest],
             ['label' => Yii::$app->user->isGuest ? '' : 'Hi '.Yii::$app->user->identity->getFirstname(),
@@ -36,13 +35,8 @@ $this->beginContent('@frontend/views/layouts/_clear.php')
                     ],
                     [
                         'label' => Yii::t('frontend', 'Administration'),
-                        'url' => Yii::getAlias('@backendUrl' . '/book/index'),
+                        'url' => Yii::getAlias('@backendUrl' . '/index'),
                         'linkOptions' => ['target' => '_blank'],
-                        'visible' => Yii::$app->user->can('manager')
-                    ],
-                    [
-                        'label' => Yii::t('frontend', 'Help'),
-                        'url' => 'http://help.londonliteraryscouting.com',
                         'visible' => Yii::$app->user->can('manager')
                     ],
                     [

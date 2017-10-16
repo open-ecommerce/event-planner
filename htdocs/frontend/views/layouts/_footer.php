@@ -4,14 +4,14 @@
         <div class="row wrapper-content">
             <div class="col-xs-12 col-sm-8">
                 <div class="footer-col-left">
-                    <p>London Literary Scouting - MacLehose, Servadio & Pupo-Thompson</p>
-                    <p>Second Home - 68 Hanbury Street - London E15JL</p>
+                    <p>UK Tango Festival & Championship</p>
+                    <p>http://uktangofestival.com/</p>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4">
                 <div class="footer-col-right">
-                    <p>rebecca@londonliteraryscouting.com</p>
-                    <p>+44 78 7624 6335</p>
+                    <p>webmaster@uktangofestival.com</p>
+                    <p>+07551524625</p>
                 </div>
             </div>
         </div>

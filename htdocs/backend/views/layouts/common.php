@@ -145,15 +145,6 @@ if (!empty(Yii::$app->user->identity->userProfile->avatar_path)) {
                         'options' => ['class' => 'header']
                     ],
                     [
-                        'label' => Yii::t('backend', 'Content'),
-                        'url' => '#',
-                        'icon' => '<i class="fa fa-edit"></i>',
-                        'options' => ['class' => 'treeview active'],
-                        'items' => [
-                            ['label' => Yii::t('backend', 'Tickets'), 'url' => ['/ticket/index'], 'icon' => '<i class="fa fa-angle-double-right"></i>'],
-                        ]
-                    ],
-                    [
                         'label' => Yii::t('backend', 'Contacts'),
                         'url' => '#',
                         'icon' => '<i class="fa fa-address-card-o"></i>',

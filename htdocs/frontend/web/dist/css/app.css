@@ -133,7 +133,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #e1137b;
+  color: #e30f7f;
   text-decoration: underline;
 }
 body {
@@ -186,19 +186,19 @@ h1 small,
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  color: #e1137b;
+  color: #fbde05;
   background-color: transparent;
 }
 li.active a {
   text-decoration: none;
-  color: #e1137b;
+  color: #fbde05;
   background-color: transparent;
 }
 .navbar .navbar-header {
   height: 25px;
 }
 .navbar a {
-  color: #552936;
+  color: #fff;
   font-weight: 700;
   font-size: 1.3em;
 }
@@ -239,16 +239,16 @@ div#main-menu-collapse ul {
   font-size: 1.2em;
 }
 .dropdown-menu li a:hover {
-  color: #e1137b;
+  color: #e30f7f;
   background-color: transparent;
 }
 .navbar-static-top,
 .navbar-fixed-top {
   border-top: 2px solid #222;
-  background-color: rgba(252, 221, 5, 0.15);
+  background-color: #e30f7f;
 }
 .navbar-fixed-top {
-  height: 95px;
+  height: 85px;
 }
 .navbar-fixed-bottom {
   border-bottom: 2px solid #FF5C48;
@@ -321,7 +321,7 @@ nav#main-menu.navbar.navbar-fixed-top.guest a.navbar-brand img {
   color: #552936;
 }
 .pagination > li > a:hover {
-  color: #b20f61;
+  color: #b30c64;
 }
 .pagination > li > a:first-child {
   border-left-width: 0;
@@ -646,7 +646,7 @@ button#extended-search-lnk {
   border-color: #331820;
 }
 .btn-view:hover {
-  color: #e1137b;
+  color: #e30f7f;
   background-color: #773a4c;
   border-color: #552936;
 }
@@ -656,7 +656,7 @@ button#extended-search-lnk {
   border-color: #449d44;
 }
 .btn-edit:hover {
-  color: #e1137b;
+  color: #e30f7f;
   background-color: #80c780;
   border-color: #5cb85c;
 }
@@ -1470,7 +1470,7 @@ nav#main-menu.navbar.guest.login a.navbar-brand {
 .login-box input#loginform-identity,
 .login-box input#loginform-password,
 .login-box input#passwordresetrequestform-email {
-  background-color: #e1137b;
+  background-color: #e30f7f;
   border: none;
   border-radius: 0;
   height: 42px;
@@ -1501,7 +1501,7 @@ nav#main-menu.navbar.guest.login a.navbar-brand {
 }
 .login-box .btn-login {
   color: #fff;
-  background-color: #e1137b;
+  background-color: #e30f7f;
   border-color: #b5a62e;
   width: 116px;
   text-align: center;
@@ -1513,7 +1513,7 @@ nav#main-menu.navbar.guest.login a.navbar-brand {
 }
 .login-box .btn-reset {
   color: #fff;
-  background-color: #e1137b;
+  background-color: #e30f7f;
   border-color: #b5a62e;
   width: 344px;
   text-align: center;
@@ -1826,7 +1826,7 @@ ul#w0.navbar-nav.navbar-right.guest.nav li a {
 .site-home .container-fluid.cards-row {
   text-align: center;
   margin: 0 auto;
-  color: #e1137b;
+  color: #e30f7f;
 }
 svg {
   height: 100%;
@@ -1877,13 +1877,13 @@ img#logo-aboutus {
   margin: 0 0px 30px 20px;
 }
 .site-about h2 {
-  color: #e1137b;
+  color: #e30f7f;
   text-align: left;
   font-size: 1.4em;
   margin-bottom: 18px;
 }
 .site-about h3 {
-  color: #e1137b;
+  color: #e30f7f;
   text-align: left;
   font-size: 1.2em;
   margin: 0 0 5px;
@@ -1927,7 +1927,7 @@ footer {
   height: 88px;
 }
 footer .wrapper-content {
-  border-top: #e1137b 1px solid;
+  border-top: #e30f7f 1px solid;
   padding: 13px 0 0 0;
 }
 footer .wrapper-content p {
