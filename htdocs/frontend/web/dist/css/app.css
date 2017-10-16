@@ -463,6 +463,9 @@ div#top-toolbar .btn.active {
  * book detail for literary scouts
  */
 /* sites/book */
+.ticket-update {
+  margin-top: 60px;
+}
 @keyframes shake {
   10%,
   90% {
@@ -1566,6 +1569,9 @@ nav#main-menu.navbar.guest.login a.navbar-brand {
 }
 .modal-header button.close {
   font-size: 4em;
+}
+#view-profile {
+  margin-top: 100px;
 }
 #view-profile #wrap-main {
   padding: 0;
