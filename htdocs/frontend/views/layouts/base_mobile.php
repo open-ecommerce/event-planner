@@ -29,9 +29,6 @@ $this->beginContent('@frontend/views/layouts/_clear.php')
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => Yii::t('frontend', 'Dashboard'), 'url' => ['/site/dashboard'], 'visible' => !Yii::$app->user->isGuest],
-            ['label' => Yii::t('frontend', 'Books'), 'url' => ['/book/index'], 'visible' => !Yii::$app->user->isGuest],
-            ['label' => Yii::t('frontend', 'Shouts and Murmurs'), 'url' => ['/article/index'], 'visible' => !Yii::$app->user->isGuest],
-            ['label' => Yii::t('frontend', 'Bookmarks'), 'url' => ['/bookmark/index'], 'visible' => !Yii::$app->user->isGuest],
             ['label' => Yii::t('frontend', 'About us'), 'url' => ['/site/about', 'slug' => 'about']],
             ['label' => Yii::t('frontend', 'Login'), 'url' => ['/user/sign-in/login'], 'visible' => Yii::$app->user->isGuest],
             ['label' => Yii::$app->user->isGuest ? '' : 'Hi ' . Yii::$app->user->identity->getFirstname(),

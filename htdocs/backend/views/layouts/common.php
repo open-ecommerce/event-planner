@@ -159,37 +159,9 @@ if (!empty(Yii::$app->user->identity->userProfile->avatar_path)) {
                                 'badgeBgClass' => 'label-success',
                             ],
                             ['label' => Yii::t('backend', 'Comments'), 'url' => ['/comments/index'], 'icon' => '<i class="fa fa-angle-double-right"></i>'],
-                            
+
                         ]
                     ],
-//                    [
-//                        'label' => Yii::t('backend', 'Users'),
-//                        'icon' => '<i class="fa fa-users"></i>',
-//                        'url' => ['/user/index'],
-//                        'visible' => Yii::$app->user->can('administrator')
-//                    ],
-                    [
-                        'label' => Yii::t('backend', 'Communications'),
-                        'url' => '#',
-                        'icon' => '<i class="fa fa-send-o"></i>',
-                        'options' => ['class' => 'communications active'],
-                        'items' => [
-                            ['label' => Yii::t('backend', '1- Newsletter Create Email'), 'url' => ['/newsletter/main/mailcreate'], 'icon' => '<i class="fa fa-angle-double-right"></i>'],
-                            ['label' => Yii::t('backend', '2- Send Mails in Queue'), 'url' => ['/newsletter/main/sending'], 'icon' => '<i class="fa fa-angle-double-right"></i>'],
-                            ['label' => Yii::t('backend', 'Send Simple Email'), 'url' => ['/communication/send-email'], 'icon' => '<i class="fa fa-angle-double-right"></i>'],
-                            ['label' => Yii::t('backend', 'Newsletter Group'), 'url' => ['/newsletter/group/index'], 'icon' => '<i class="fa fa-angle-double-right"></i>'],
-                            ['label' => Yii::t('backend', 'Newsletter Merge Fields'), 'url' => ['/newsletter/mergefields'], 'icon' => '<i class="fa fa-angle-double-right"></i>'],
-                            ['label' => Yii::t('backend', 'Newsletter Email Templates'), 'url' => ['/newsletter/email-templates'], 'icon' => '<i class="fa fa-angle-double-right"></i>'],
-                            ['label' => Yii::t('backend', 'Newsletter Settings'), 'url' => ['/newsletter/setting/index'], 'icon' => '<i class="fa fa-angle-double-right"></i>'],
-                        ]
-                    ],                    [
-                        'label' => Yii::t('backend', 'Statistics'),
-                        'url' => '#',
-                        'icon' => '<i class="fa fa-bar-chart-o"></i>',
-                        'options' => ['class' => 'reports active'],
-                        'items' => [
-                            ['label' => Yii::t('backend', 'Viewed Books'), 'url' => ['/report/index'], 'icon' => '<i class="fa fa-angle-double-right"></i>'],
-                        ]
                     ],
                     [
                         'label' => Yii::t('backend', 'System Content'),
