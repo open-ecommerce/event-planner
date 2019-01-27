@@ -56,6 +56,7 @@ use dosamigos\selectize\SelectizeDropDownList;
     );
     $tabProfile .= '</div>';
     $tabProfile .= '<div class="col-md-6" id="wrap-detail">';
+    $tabProfile .= $form->field($model, 'ticket_status')->dropDownList(['PAID' => 'PAID', 'NOT PAID' => 'NOT PAID', "FREE"=>"FREE"],['prompt'=>'Select Option']);
     $tabProfile .= $form->field($model, 'ticket_type_id')->widget(SelectizeDropDownList::className(), [
         'loadUrl' => ['ticket/types'],
         'value' => $ticketType,
@@ -113,7 +114,7 @@ use dosamigos\selectize\SelectizeDropDownList;
     $tabTicket .= $form->field($model, 'ticket_name')->textInput(['maxlength' => 255]);
     $tabTicket .= $form->field($model, 'transaction_id')->textInput();
     $tabTicket .= $form->field($model, 'transaction_status')->textInput(['maxlength' => true]);
-    $tabTicket .= $form->field($model, 'transaction_amount')->textInput();
+    //$tabTicket .= $form->field($model, 'transaction_amount')->textInput();
     $tabTicket .= '</div>';
     $tabTicket .= '<div class="col-md-4">';
     $tabTicket .= $form->field($model, 'amount_paid')->textInput();
@@ -130,12 +131,12 @@ use dosamigos\selectize\SelectizeDropDownList;
             'content' => $tabProfile,
         ],
         [
-            'label' => '<i class="fa fa-address-card-o"></i> Dancer Address',
-            'content' => $tabAddress,
-        ],
-        [
             'label' => '<i class="fa fa-shopping-cart"></i> Ticket Details',
             'content' => $tabTicket,
+        ],
+        [
+            'label' => '<i class="fa fa-address-card-o"></i> Payment Address',
+            'content' => $tabAddress,
         ],
     ];
 

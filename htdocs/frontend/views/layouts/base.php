@@ -24,6 +24,9 @@ $this->beginContent('@frontend/views/layouts/_clear.php')
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => Yii::t('frontend', 'Ticket Check-In'), 'url' => ['/ticket/index'], 'visible' => !Yii::$app->user->isGuest],
+                        ['label' => 'Utilities', 'items' => [
+                                ['label' => 'Register Totals', 'url' => ['/ticket/total-tickets']]
+                            ]],
             ['label' => Yii::t('frontend', 'About us'), 'url' => ['/site/about', 'slug' => 'about']],
             ['label' => Yii::t('frontend', 'Login'), 'url' => ['/user/sign-in/login'], 'visible' => Yii::$app->user->isGuest],
             ['label' => Yii::$app->user->isGuest ? '' : 'Hi '.Yii::$app->user->identity->getFirstname(),

@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use kartik\form\ActiveForm;
+//use jakobreiter\quaggajs;
 
 /* @var $this yii\web\View */
 /* @var $model backend\models\search\BookSearch */
@@ -10,6 +11,7 @@ use kartik\form\ActiveForm;
 
 
 <div id="barcode-search">
+
 
     <?php
     $form = ActiveForm::begin([
@@ -30,8 +32,17 @@ use kartik\form\ActiveForm;
             ]
         ]
     ])->textInput()->input('barcodeSearch', ['placeholder' => "Search by barcode"])->label(false);
-    ;
-    ?>
+
+//
+//    echo jakobreiter\quaggajs\YiiQuagga::widget([
+//        "id" => 'codereader',
+//        'name' => 'BarcodeForm[number]',
+//        'target' => '#barcodeform-number',
+//        'messages' => '#messages',
+//    ]);
+//
+//
+//    ?>
 
     <?php ActiveForm::end(); ?>
 

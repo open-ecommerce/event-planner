@@ -6,6 +6,10 @@ $config = [
     'extensions' => require(__DIR__ . '/../../vendor/yiisoft/extensions.php'),
     'bootstrap' => ['log'],
     'modules' => [
+        'gii'=> [
+            'class'=>'system.gii.GiiModule',
+            'password'=>'Password123'
+        ],
         'treemanager' => [
             'class' => '\kartik\tree\Module',
         // other module settings, refer detailed documentation
@@ -203,15 +207,15 @@ if (YII_ENV_DEV) {
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
-        'allowedIPs' => $allowedIPs,
+        'allowedIPs' => ['172.18.0.1', '::1', '192.168.2.125'],
     ];
 
-    //$giiant = require __DIR__ . '/giiant.php';
-    //$config = \yii\helpers\ArrayHelper::merge($config, $giiant);
+    $giiant = require __DIR__ . '/giiant.php';
+    $config = \yii\helpers\ArrayHelper::merge($config, $giiant);
 
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
-        'allowedIPs' => ['127.0.0.1', '::1', '192.168.2.107'],
+        'allowedIPs' => ['172.18.0.1', '::1', '192.168.2.125'],
         'generators' => [
             // generator name
             'giiant-model' => [

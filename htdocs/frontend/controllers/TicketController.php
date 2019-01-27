@@ -2,6 +2,7 @@
 
 namespace frontend\controllers;
 
+use common\models\TotalTickets;
 use Yii;
 use common\models\Ticket;
 use frontend\models\search\TicketSearch;
@@ -21,12 +22,14 @@ use yii\helpers\ArrayHelper;
 /**
  * TicketController implements the CRUD actions for Ticket model.
  */
-class TicketController extends Controller {
+class TicketController extends Controller
+{
 
     /**
      * @return array
      */
-    public function behaviors() {
+    public function behaviors()
+    {
         return [
             'verbs' => [
                 'class' => VerbFilter::className(),
@@ -41,7 +44,8 @@ class TicketController extends Controller {
      * Lists all Ticket models.
      * @return mixed
      */
-    public function actionIndex() {
+    public function actionIndex()
+    {
 
         $requestBarcode = Yii::$app->request->queryParams;
         $isBarcode = arrayHelper::getvalue($requestBarcode, 'TicketSearch.barcodeSearch');
@@ -80,8 +84,8 @@ class TicketController extends Controller {
         }
 
         return $this->render('index', [
-                    'searchModel' => $searchModel,
-                    'dataProvider' => $dataProvider,
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
         ]);
     }
 
@@ -90,26 +94,42 @@ class TicketController extends Controller {
      * @param integer $id
      * @return mixed
      */
-    public function actionView($id) {
+    public function actionView($id)
+    {
         return $this->render('view', [
-                    'model' => $this->findModel($id),
+            'model' => $this->findModel($id),
         ]);
     }
 
+
+    public function actionTotalTickets()
+    {
+        $model = TotalTickets::find()->all();
+        $dataProvider = new ActiveDataProvider([
+            'query' => $model
+        ]);
+
+        return $this->render('total-tickets', [
+            'dataProvider' => $dataProvider,
+        ]);
+    }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
     /**
      * Creates a new Ticket model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    public function actionCreate() {
+    public function actionCreate()
+    {
         $model = new Ticket();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['index']);
         } else {
             return $this->render('create', [
-                        'model' => $model,
-                        'ticketType' => TicketType::find()->all(),
+                'model' => $model,
+                'ticketType' => TicketType::find()->all(),
             ]);
         }
     }
@@ -120,15 +140,16 @@ class TicketController extends Controller {
      * @param integer $id
      * @return mixed
      */
-    public function actionUpdate($id) {
+    public function actionUpdate($id)
+    {
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['index']);
         } else {
             return $this->render('update', [
-                        'model' => $model,
-                        'ticketType' => TicketType::find()->all(),
+                'model' => $model,
+                'ticketType' => TicketType::find()->all(),
             ]);
         }
     }
@@ -139,7 +160,8 @@ class TicketController extends Controller {
      * @param integer $id
      * @return mixed
      */
-    public function actionDelete($id) {
+    public function actionDelete($id)
+    {
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
@@ -152,7 +174,8 @@ class TicketController extends Controller {
      * @return Ticket the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
-    protected function findModel($id) {
+    protected function findModel($id)
+    {
         if (($model = Ticket::findOne($id)) !== null) {
             return $model;
         } else {
@@ -160,7 +183,8 @@ class TicketController extends Controller {
         }
     }
 
-    public function actionTypes($query) {
+    public function actionTypes($query)
+    {
         $models = \common\models\base\TicketType::findAllByName($query);
         $items = [];
 
@@ -173,7 +197,8 @@ class TicketController extends Controller {
         return $items;
     }
 
-    public function actionDetail() {
+    public function actionDetail()
+    {
         if (isset($_POST['expandRowKey'])) {
             $ID = Yii::$app->request->post('expandRowKey');
             $model = TicketAttendance::find()->where(['ticket_id' => $ID])->orderBy('attendance desc');
@@ -184,7 +209,7 @@ class TicketController extends Controller {
             ]);
             $this->layout = '_only-content';
             return $this->render('_grid_attendance-details', [
-                        'dataProvider' => $dataProvider,
+                'dataProvider' => $dataProvider,
             ]);
         } else {
             return '<div class="alert alert-danger">No data found with id:' . $ID . '</div>';

@@ -40,6 +40,7 @@ use Yii;
  * @property string $dance_partner
  * @property string $dance_partner_nationality
  * @property string $aliasModel
+ * @property string $ticket_status
  */
 abstract class Ticket extends \yii\db\ActiveRecord
 {
@@ -77,7 +78,7 @@ abstract class Ticket extends \yii\db\ActiveRecord
     {
         return [
             [['id', 'transaction_id', 'attendee_id', 'registration_id', 'ticket_type_id'], 'integer'],
-            [['thumbnail','registration_time', 'payment_date', 'ticket_date'], 'safe'],
+            [['thumbnail','registration_time', 'payment_date', 'ticket_date','ticket_status'], 'safe'],
             [['transaction_amount', 'amount_paid'], 'number'],
             [['notes'], 'string'],
             [['first_name', 'last_name', 'ticket_type_id'], 'required'],
@@ -108,6 +109,7 @@ abstract class Ticket extends \yii\db\ActiveRecord
             'geteway_transaction' => Yii::t('models', 'Geteway Transaction'),
             'ticket_type_id' => Yii::t('models', 'Ticket Type'),
             'ticket_name' => Yii::t('models', 'WP Ticket Name'),
+            'ticket_status' => Yii::t('models', 'Ticket Status'),
             'ticket_date' => Yii::t('models', 'Ticket Date'),
             'first_name' => Yii::t('models', 'First Name'),
             'last_name' => Yii::t('models', 'Last Name'),

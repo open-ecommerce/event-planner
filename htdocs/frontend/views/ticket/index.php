@@ -5,6 +5,7 @@
 use kartik\daterange\DateRangePicker;
 use yii\helpers\Html;
 use kartik\grid\GridView;
+use kartik\editable\Editable;
 use yii\helpers\Url;
 use common\models\UserProfile;
 use common\models\User;
@@ -61,11 +62,36 @@ $this->title = "  List of Tickets";
             'attribute' => 'barcode',
             'editableOptions' => [
                 'header' => 'Barcode',
+
             ],
             'hAlign' => 'left',
             'vAlign' => 'middle',
             'width' => '10px',
             'filter' => '',
+        ],
+        [
+            'class' => 'kartik\grid\EditableColumn',
+            'editableOptions' => [
+                'name'=>'status',
+                'value' => 0,
+                'asPopover' => true,
+                'header' => 'Status',
+                'inputType' => Editable::INPUT_DROPDOWN_LIST,
+                'data' => ['PAID' => 'PAID', 'NOT PAID'  => 'NOT PAID', "FREE"=>"FREE"],
+                'options' => ['class'=>'form-control', 'prompt'=>'Select status...'],
+                'displayValueConfig'=> [
+                    'PAID' => 'PAID',
+                    'NOT PAID' => 'NOT PAID',
+                ],
+            ],
+            'attribute' => 'ticket_status',
+            'label' => 'Status',
+            'hAlign' => 'left',
+            'vAlign' => 'middle',
+            'width' => '50px',
+            'format' => 'raw',
+            'filter' => array("PAID"=>"PAID", "NOT PAID"=>"NOT PAID", "FREE"=>"FREE")
+
         ],
         [
             'attribute' => 'ticket_type_id',

@@ -3,6 +3,7 @@
 /**
  * @var $this yii\web\View
  */
+
 use backend\assets\BackendAsset;
 use backend\widgets\Menu;
 use common\models\TimelineEvent;
@@ -87,7 +88,8 @@ if (!empty(Yii::$app->user->identity->userProfile->avatar_path)) {
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header light-blue">
-                                <img src="<?php echo Yii::$app->user->identity->userProfile->getAvatar($this->assetManager->getAssetUrl($bundle, 'img/anonymous.jpg')) ?>" class="img-circle" alt="User Image" />
+                                <img src="<?php echo Yii::$app->user->identity->userProfile->getAvatar($this->assetManager->getAssetUrl($bundle, 'img/anonymous.jpg')) ?>"
+                                     class="img-circle" alt="User Image"/>
                                 <p>
                                     <?php echo Yii::$app->user->identity->username ?>
                                     <small>
@@ -122,7 +124,7 @@ if (!empty(Yii::$app->user->identity->userProfile->avatar_path)) {
             <!-- Sidebar user panel -->
             <div class="user-panel">
                 <div class="pull-left image">
-                    <img src="<?= $avatar ?>" class="img-circle" />
+                    <img src="<?= $avatar ?>" class="img-circle"/>
                 </div>
                 <div class="pull-left info">
                     <p><?php echo Yii::t('backend', 'Hello, {username}', ['username' => Yii::$app->user->identity->getPublicIdentity()]) ?></p>
@@ -159,9 +161,23 @@ if (!empty(Yii::$app->user->identity->userProfile->avatar_path)) {
                                 'badgeBgClass' => 'label-success',
                             ],
                             ['label' => Yii::t('backend', 'Comments'), 'url' => ['/comments/index'], 'icon' => '<i class="fa fa-angle-double-right"></i>'],
-
                         ]
                     ],
+                    [
+                        'label' => Yii::t('backend', 'Communications'),
+                        'url' => '#',
+                        'icon' => '<i class="fa fa-send-o"></i>',
+                        'options' => ['class' => 'communications active'],
+                        'items' => [
+                            ['label' => Yii::t('backend', '1- Newsletter Create Email'), 'url' => ['/newsletter/main/mailcreate'], 'icon' => '<i class="fa fa-angle-double-right"></i>'],
+                            ['label' => Yii::t('backend', '2- Send Mails in Queue'), 'url' => ['/newsletter/main/sending'], 'icon' => '<i class="fa fa-angle-double-right"></i>'],
+                            ['label' => Yii::t('backend', 'Newsletters history'), 'url' => ['/custom-newsletter/index'], 'icon' => '<i class="fa fa-angle-double-right"></i>'],
+                            ['label' => Yii::t('backend', 'Send Simple Email'), 'url' => ['/communication/send-email'], 'icon' => '<i class="fa fa-angle-double-right"></i>'],
+                            ['label' => Yii::t('backend', 'Newsletter Group'), 'url' => ['/newsletter/group/index'], 'icon' => '<i class="fa fa-angle-double-right"></i>'],
+                            ['label' => Yii::t('backend', 'Newsletter Merge Fields'), 'url' => ['/newsletter/mergefields'], 'icon' => '<i class="fa fa-angle-double-right"></i>'],
+                            ['label' => Yii::t('backend', 'Newsletter Email Templates'), 'url' => ['/newsletter/email-templates'], 'icon' => '<i class="fa fa-angle-double-right"></i>'],
+                            ['label' => Yii::t('backend', 'Newsletter Settings'), 'url' => ['/newsletter/setting/index'], 'icon' => '<i class="fa fa-angle-double-right"></i>'],
+                        ]
                     ],
                     [
                         'label' => Yii::t('backend', 'System Content'),
@@ -225,39 +241,31 @@ if (!empty(Yii::$app->user->identity->userProfile->avatar_path)) {
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <?php
-            echo Breadcrumbs::widget([
-                'tag' => 'ol',
-                'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-            ])
+            echo Breadcrumbs::widget(['tag' => 'ol',
+            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],])
             ?>
         </section>
 
         <!-- Main content -->
         <section class="content">
             <div id="flash-message">
-            <?php
-            //Get all flash messages and loop through them
-            foreach (Yii::$app->session->getAllFlashes() as $message):;
-                echo \kartik\widgets\Growl::widget([
-                    'type' => (!empty($message['type'])) ? $message['type'] : 'info',
-                    'title' => (!empty($message['title'])) ? Html::encode($message['title']) : 'Some info...',
-                    'icon' => (!empty($message['icon'])) ? $message['icon'] : 'fa fa-info',
-                    'body' => (!empty($message['message'])) ? Html::encode($message['message']) : $message,
-                    'showSeparator' => true,
-                    'delay' => 1, //This delay is how long before the message shows
-                    'pluginOptions' => [
-                        'delay' => (!empty($message['duration'])) ? $message['duration'] : 3000, //This delay is how long the message shows for
-                        'placement' => [
-                            'from' => (!empty($message['positonY'])) ? $message['positonY'] : 'top',
-                            'align' => (!empty($message['positonX'])) ? $message['positonX'] : 'center',
-                        ]
-                    ]
-                ]);
-            endforeach;
-            ?>
+                <?php
+                //Get all flash messages and loop through them
+                foreach (Yii::$app->session->getAllFlashes() as $message):;
+                echo \kartik\widgets\Growl::widget(['type' => (!empty($message['type'])) ? $message['type'] : 'info',
+                'title' => (!empty($message['title'])) ? Html::encode($message['title']) : 'Some info...',
+                'icon' => (!empty($message['icon'])) ? $message['icon'] : 'fa fa-info',
+                'body' => (!empty($message['message'])) ? Html::encode($message['message']) : $message,
+                'showSeparator' => true,
+                'delay' => 1, //This delay is how long before the message shows
+                'pluginOptions' => ['delay' => (!empty($message['duration'])) ? $message['duration'] : 3000, //This delay is how long the message shows for
+                'placement' => ['from' => (!empty($message['positonY'])) ? $message['positonY'] : 'top',
+                'align' => (!empty($message['positonX'])) ? $message['positonX'] : 'center',]]]);
+                endforeach;
+                ?>
             </div>
 
-<?php echo $content ?>
+            <?php echo $content ?>
         </section><!-- /.content -->
     </aside><!-- /.right-side -->
 </div><!-- ./wrapper -->

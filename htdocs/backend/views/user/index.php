@@ -67,18 +67,6 @@ $roles = [
             'format' => 'raw'
         ],
         [
-            'attribute' => 'publishing_house_id',
-            'value' => 'company.name',
-            'label' => 'Company Name',
-            'filterType' => GridView::FILTER_SELECT2,
-            'filter' => ArrayHelper::map(Company::find()->orderBy('name')->asArray()->all(), 'id', 'name'),
-            'filterWidgetOptions' => [
-                'pluginOptions' => ['allowClear' => true],
-            ],
-            'filterInputOptions' => ['placeholder' => 'Any Company'],
-            'format' => 'raw'
-        ],
-        [
             'label' => 'User Role',
             'attribute' => 'userRole',
             'value' => 'userRole',

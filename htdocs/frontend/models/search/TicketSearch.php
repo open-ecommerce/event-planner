@@ -21,7 +21,7 @@ class TicketSearch extends Ticket {
     public function rules() {
         return [
             [['id', 'transaction_id', 'attendee_id', 'registration_id', 'ticket_type_id'], 'integer'],
-            [['barcodeSearch', 'barcode', 'registration_time', 'registration_code', 'registration_status', 'transaction_status', 'payment_date', 'payment_method', 'geteway_transaction', 'ticket_name', 'ticket_date', 'first_name', 'last_name', 'email', 'address_1', 'address_2', 'city', 'state', 'country', 'postal_code', 'phone', 'notes', 'dance_partner', 'dance_partner_nationality'], 'safe'],
+            [['ticket_status','barcodeSearch', 'barcode', 'registration_time', 'registration_code', 'registration_status', 'transaction_status', 'payment_date', 'payment_method', 'geteway_transaction', 'ticket_name', 'ticket_date', 'first_name', 'last_name', 'email', 'address_1', 'address_2', 'city', 'state', 'country', 'postal_code', 'phone', 'notes', 'dance_partner', 'dance_partner_nationality'], 'safe'],
             [['transaction_amount', 'amount_paid'], 'number'],
         ];
     }
@@ -67,6 +67,7 @@ class TicketSearch extends Ticket {
                     ->andFilterWhere(['like', 'payment_method', $this->payment_method])
                     ->andFilterWhere(['like', 'geteway_transaction', $this->geteway_transaction])
                     ->andFilterWhere(['like', 'first_name', $this->first_name])
+                    ->andFilterWhere(['=', 'ticket_status', $this->ticket_status])
                     ->andFilterWhere(['like', 'last_name', $this->last_name])
                     ->andFilterWhere(['like', 'email', $this->email])
                     ->andFilterWhere(['like', 'address_1', $this->address_1])
