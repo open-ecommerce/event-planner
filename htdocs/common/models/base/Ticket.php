@@ -37,10 +37,24 @@ use Yii;
  * @property string $postal_code
  * @property string $phone
  * @property string $notes
- * @property string $dance_partner
- * @property string $dance_partner_nationality
+ * @property string $nationality_partner
  * @property string $aliasModel
  * @property string $ticket_status
+ * @property string $first_name_partner
+ * @property string $reg_city
+ * @property string $reg_country
+ * @property string $reg_fb
+ * @property string $reg_phone
+ * @property string $reg_whats_up
+ * @property string $reg_email
+ * @property string $role
+ * @property string $couple_registration
+ * @property string $reg_city_partner
+ * @property string $reg_country_partner
+ * @property string $reg_fb_partner
+ * @property string $reg_phone_partner
+ * @property string $reg_email_partner
+ * @property string $reg_notes
  */
 abstract class Ticket extends \yii\db\ActiveRecord
 {
@@ -77,12 +91,16 @@ abstract class Ticket extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id', 'transaction_id', 'attendee_id', 'registration_id', 'ticket_type_id'], 'integer'],
+            [['id', 'transaction_id', 'attendee_id', 'registration_id', 'ticket_type_id', 'couple_registration'], 'integer'],
             [['thumbnail','registration_time', 'payment_date', 'ticket_date','ticket_status'], 'safe'],
             [['transaction_amount', 'amount_paid'], 'number'],
             [['notes'], 'string'],
+            [['first_name_partner', 'last_name_partner', 'nationality_partner', 'reg_city', 'reg_country', 'reg_fb', 'reg_phone', 'reg_whats_up', 'reg_email', 'reg_role'], 'safe'],
+            [['reg_city_partner', 'reg_country_partner', 'reg_fb_partner', 'reg_phone_partner', 'reg_email_partner'], 'safe'],
             [['first_name', 'last_name', 'ticket_type_id'], 'required'],
-            [['registration_code', 'registration_status', 'transaction_status', 'payment_method', 'geteway_transaction', 'address_1', 'address_2', 'city', 'state', 'country', 'postal_code', 'phone', 'dance_partner', 'dance_partner_nationality'], 'string', 'max' => 50],
+            [['registration_code', 'registration_status', 'transaction_status', 'payment_method', 'geteway_transaction', 'address_1', 'address_2', 'city', 'state', 'country', 'postal_code', 'phone'], 'string', 'max' => 100],
+            [['first_name_partner', 'last_name_partner', 'nationality_partner', 'reg_city', 'reg_country', 'reg_fb', 'reg_phone', 'reg_whats_up', 'reg_email', 'reg_role'], 'string', 'max' => 100],
+            [['reg_city_partner', 'reg_country_partner', 'reg_fb_partner', 'reg_phone_partner', 'reg_email_partner'], 'string', 'max' => 100],
             [['barcodeSearch','barcode', 'ticket_name', 'first_name', 'last_name', 'email'], 'string', 'max' => 100]
         ];
     }
@@ -122,8 +140,15 @@ abstract class Ticket extends \yii\db\ActiveRecord
             'postal_code' => Yii::t('models', 'Postal Code'),
             'phone' => Yii::t('models', 'Phone'),
             'notes' => Yii::t('models', 'Notes'),
-            'dance_partner' => Yii::t('models', 'Dance Partner'),
-            'dance_partner_nationality' => Yii::t('models', 'Dance Partner Nationality'),
+            'first_name_partner' => Yii::t('models', 'Partner First Name'),
+            'nationality_partner' => Yii::t('models', 'Dance Partner Nationality'),
+            'reg_city' => Yii::t('models', 'City'),
+            'reg_Country' => Yii::t('models', 'Country'),
+            'reg_Phone' => Yii::t('models', 'Phone'),
+            'reg_whats_up' => Yii::t('models', 'WhatsUp?'),
+            'reg_fb' => Yii::t('models', 'Facebook'),
+            'reg_email' => Yii::t('models', 'Email'),
+            'reg_role' => Yii::t('models', 'Role'),
         ];
     }
 

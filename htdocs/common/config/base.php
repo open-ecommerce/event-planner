@@ -20,6 +20,10 @@ $config = [
         'comment' => [
             'class' => 'yii2mod\comments\Module',
         ],
+        'backuprestore' => [
+            'class' => '\oe\modules\backuprestore\Module',
+            //'layout' => '@admin-views/layouts/main', or what ever layout you us
+        ],
     ],
     'components' => [
         'mobileDetect' => [

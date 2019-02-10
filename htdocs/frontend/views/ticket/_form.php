@@ -7,6 +7,7 @@ use marqu3s\summernote\Summernote;
 use yii\web\JsExpression;
 use common\models\TicketType;
 use kartik\tabs\TabsX;
+use kartik\widgets\SwitchInput;
 use dosamigos\selectize\SelectizeDropDownList;
 
 /* @var $this yii\web\View */
@@ -76,11 +77,67 @@ use dosamigos\selectize\SelectizeDropDownList;
     ]);
     $tabProfile .= $form->field($model, 'ticket_date')->textInput(['maxlength' => 255]);
     $tabProfile .= $form->field($model, 'attendee_id')->textInput(['maxlength' => 255]);
-    $tabProfile .= $form->field($model, 'dance_partner')->textInput(['maxlength' => 255]);
-    $tabProfile .= $form->field($model, 'dance_partner_nationality')->textInput(['maxlength' => 255]);
     $tabProfile .= $form->field($model, 'email')->textInput(['maxlength' => 255]);
     $tabProfile .= '</div>';
     $tabProfile .= '</div>';
+
+    $tabRegistration = '';
+    $tabRegistration .= '<div class="row">';
+    $tabRegistration .= '<div class="col-lg-12" id="update-registration">';
+    $tabRegistration .= '<div class="col-md-6">';
+    $tabRegistration .= '<div class="title">Main Registrant</div>';
+    $tabRegistration .= '<div class="boxed">';
+    $tabRegistration .= '<div class="col-md-6">';
+    $tabRegistration .= $form->field($model, 'first_name')->textInput(['maxlength' => 255]);
+    $tabRegistration .= $form->field($model, 'reg_city')->textInput(['maxlength' => true]);
+    $tabRegistration .= $form->field($model, 'reg_phone')->textInput(['maxlength' => true]);
+    $tabRegistration .= $form->field($model, 'reg_fb')->textInput(['maxlength' => true]);
+    $tabRegistration .= $form->field($model, 'reg_email')->textInput(['maxlength' => true]);
+    $tabRegistration .= '</div>';
+    $tabRegistration .= '<div class="col-md-6">';
+    $tabRegistration .= $form->field($model, 'last_name')->textInput(['maxlength' => 255]);
+    $tabRegistration .= $form->field($model, 'reg_country')->textInput(['maxlength' => true]);
+    $tabRegistration .= $form->field($model, 'reg_whats_up')->widget(SwitchInput::classname(), []);
+    $tabRegistration .= $form->field($model, 'reg_role')->dropDownList(['FOLLOWER' => 'FOLLOWER', 'LEADER' => 'LEADER'],['prompt'=>'Select Option']);
+    $tabRegistration .= '</div>';
+    $tabRegistration .= '</div>';
+    $tabRegistration .= '</div>';
+    $tabRegistration .= '<div class="col-md-6">';
+    $tabRegistration .= '<div class="title">Dance Partner</div>';
+    $tabRegistration .= '<div class="boxed">';
+    $tabRegistration .= '<div class="col-md-6">';
+    $tabRegistration .= $form->field($model, 'first_name_partner')->textInput(['maxlength' => 255]);
+    $tabRegistration .= $form->field($model, 'reg_city_partner')->textInput(['maxlength' => true]);
+    $tabRegistration .= $form->field($model, 'reg_email_partner')->textInput(['maxlength' => true]);
+    $tabRegistration .= $form->field($model, 'reg_phone_partner')->textInput(['maxlength' => true]);
+    $tabRegistration .= '</div>';
+    $tabRegistration .= '<div class="col-md-6">';
+    $tabRegistration .= $form->field($model, 'last_name_partner')->textInput(['maxlength' => 255]);
+    $tabRegistration .= $form->field($model, 'reg_country_partner')->textInput(['maxlength' => true]);
+    $tabRegistration .= $form->field($model, 'nationality_partner')->textInput(['maxlength' => 255]);
+    $tabRegistration .= $form->field($model, 'reg_fb_partner')->textInput(['maxlength' => true]);
+    $tabRegistration .= '</div>';
+    $tabRegistration .= '</div>';
+    $tabRegistration .= '</div>';
+    $tabRegistration .= '<div class="col-lg-12">';
+    $tabRegistration .= $form->field($model, 'notes')->widget(
+        \yii\imperavi\Widget::className(), [
+            'plugins' => ['fullscreen', 'fontcolor'],
+            'options' => [
+                'minHeight' => 200,
+                'maxHeight' => 200,
+                'buttonSource' => true,
+                'convertDivs' => false,
+                'removeEmptyTags' => false,
+                'imageUpload' => Yii::$app->urlManager->createUrl(['/file-storage/upload-imperavi'])
+            ]
+        ]
+    );
+    $tabRegistration .= '</div>';
+    $tabRegistration .= '</div>';
+    $tabRegistration .= '</div>';
+
+
 
     $tabAddress = '';
     $tabAddress .= '<div class="row">';
@@ -129,6 +186,10 @@ use dosamigos\selectize\SelectizeDropDownList;
         [
             'label' => '<i class="fa fa-user-circle"></i> Ticket Owner',
             'content' => $tabProfile,
+        ],
+        [
+            'label' => '<i class="fa fa-wpforms"></i> Registration Form',
+            'content' => $tabRegistration,
         ],
         [
             'label' => '<i class="fa fa-shopping-cart"></i> Ticket Details',

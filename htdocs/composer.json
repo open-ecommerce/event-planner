@@ -96,7 +96,9 @@
         "supplyhog/yii2-clipboardjs" : "dev-master",
         "kartik-v/yii2-field-range": "*",
         "kartik-v/yii2-date-range": "*",
-        "skeeks/yii2-mobile-detect": "*"
+        "skeeks/yii2-mobile-detect": "*",
+        "open-ecommerce/yii2-backuprestore": "dev-master",
+        "ruskid/yii2-csv-importer": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "^2.0.0",
