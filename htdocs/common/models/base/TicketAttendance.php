@@ -38,7 +38,7 @@ abstract class TicketAttendance extends \yii\db\ActiveRecord
     {
         return [
             [['ticket_id', 'attendance'], 'required'],
-            [['ticket_id', 'venue_id'], 'integer'],
+            [['ticket_id', 'venue_id', 'direction'], 'integer'],
             [['attendance'], 'safe'],
             [['ticket_id'], 'exist', 'skipOnError' => true, 'targetClass' => \common\models\Ticket::className(), 'targetAttribute' => ['ticket_id' => 'id']]
         ];

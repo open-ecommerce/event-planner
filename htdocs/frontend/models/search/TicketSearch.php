@@ -20,7 +20,7 @@ class TicketSearch extends Ticket {
      */
     public function rules() {
         return [
-            [['id', 'transaction_id', 'attendee_id', 'registration_id', 'ticket_type_id'], 'integer'],
+            [['id','order_id', 'transaction_id', 'attendee_id', 'registration_id', 'ticket_type_id'], 'integer'],
             [['ticket_status','barcodeSearch', 'barcode', 'registration_time', 'registration_code', 'registration_status', 'transaction_status', 'payment_date', 'payment_method', 'geteway_transaction', 'ticket_name', 'ticket_date', 'first_name', 'last_name', 'email', 'address_1', 'address_2', 'city', 'state', 'country', 'postal_code', 'phone', 'notes'], 'safe'],
             [['transaction_amount', 'amount_paid'], 'number'],
         ];
@@ -46,6 +46,7 @@ class TicketSearch extends Ticket {
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'pagination' => array('pageSize' => 100),
         ]);
 
         if (!($this->load($params) && $this->validate())) {
@@ -59,6 +60,7 @@ class TicketSearch extends Ticket {
             $query->andFilterWhere([
                 'id' => $this->id,
                 'ticket_type_id' => $this->ticket_type_id,
+                'order_id' => $this->order_id,
             ]);
 
             $query->andFilterWhere(['like', 'registration_code', $this->registration_code])

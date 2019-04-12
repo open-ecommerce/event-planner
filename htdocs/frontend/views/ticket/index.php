@@ -39,7 +39,11 @@ $this->title = "  List of Tickets";
         [
             'attribute' => 'id',
             'width' => '5px',
-        ],        
+        ],
+        [
+            'attribute' => 'order_id',
+            'width' => '5px',
+        ],
         [
             'class' => 'kartik\grid\ExpandRowColumn',
             'value' => function ($model, $key, $index, $column) {
@@ -54,7 +58,7 @@ $this->title = "  List of Tickets";
             'attribute' => 'Picture',
             'format' => 'raw',
             'value' => function($model, $key ) {
-                return ($model->avatar) ? Html::a(Html::img($model->avatar, ['width' => '100', 'class' => 'img-circle']), '/ticket/update?id=' . $key, ['alt' => '_blank']) : false;
+                return ($model->avatar) ? Html::a(Html::img($model->avatar, ['width' => '100', 'class' => 'img-circle']), '/ticket/view?id=' . $key, ['alt' => '_blank']) : false;
             },
         ],
         [

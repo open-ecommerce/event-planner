@@ -16,6 +16,7 @@ use yii\bootstrap\ActiveForm;
     ]); ?>
 
     <?php echo $form->field($model, 'id') ?>
+    <?php echo $form->field($model, 'order_id') ?>
 
     <?php echo $form->field($model, 'barcode') ?>
 

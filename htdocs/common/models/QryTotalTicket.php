@@ -1,9 +1,10 @@
 <?php
 
-namespace app\modules\crud\models;
+namespace common\models;
+
 
 use Yii;
-use \app\modules\crud\models\base\QryTotalTicket as BaseQryTotalTicket;
+use  common\models\base\TotalTickets as BaseQryTotalTicket;
 use yii\helpers\ArrayHelper;
 
 /**

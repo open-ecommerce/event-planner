@@ -32,6 +32,12 @@ $deleteMsg = "Are you sure you want to delete this client ticket detail?";
             'width' => '30px',            
         ],
         [
+            'value' => function($model, $key, $index, $column) { return $model->direction == 0 ? 'Exiting' : 'Entring';},
+            'hAlign' => 'center',
+            'vAlign' => 'middle',
+            'width' => '30px',
+        ],
+        [
             'class' => 'kartik\grid\ActionColumn',
             'header' => 'Delete',
             'template' => '{delete}',

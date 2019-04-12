@@ -80,6 +80,7 @@ class TicketController extends Controller
             $attendance->ticket_id = $currentTicket->id;
             $attendance->venue_id = 1;
             $attendance->attendance = date("Y-m-d H:i:s");
+            $attendance->direction = 1;
             $attendance->save(false);
         }
 
@@ -89,6 +90,58 @@ class TicketController extends Controller
         ]);
     }
 
+
+    /**
+     * Lists all Ticket models.
+     * @return mixed
+     */
+    public function actionExiting()
+    {
+
+        $requestBarcode = Yii::$app->request->queryParams;
+        $isBarcode = arrayHelper::getvalue($requestBarcode, 'TicketSearch.barcodeSearch');
+
+
+        $searchModel = new TicketSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $this->layout = 'main_full_width';
+
+        // validate if there is a editable input saved via AJAX
+        if (Yii::$app->request->post('hasEditable')) {
+            $ticketId = Yii::$app->request->post('editableKey');
+            $model = Ticket::findOne($ticketId);
+            $out = Json::encode(['output' => '', 'message' => '']);
+            $posted = current($_POST['Ticket']);
+            $post = ['Ticket' => $posted];
+            if ($model->load($post)) {
+                // can save model or do something before saving model
+                $model->save();
+                $output = '';
+                $out = Json::encode(['output' => $output, 'message' => '']);
+            }
+            echo $out;
+            return;
+        }
+
+        //add new record if scanning and found
+        if ((!empty($isBarcode)) && ($dataProvider->getTotalCount() == 1)) {
+            $newQuery = clone $dataProvider->query;
+            $currentTicket = $newQuery->limit(1)->one();
+            $attendance = new TicketAttendance();
+            $attendance->ticket_id = $currentTicket->id;
+            $attendance->venue_id = 1;
+            $attendance->attendance = date("Y-m-d H:i:s");
+            $attendance->direction = 0;
+            $attendance->save(false);
+        }
+
+        return $this->render('exiting', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+        ]);
+    }
+
+
     /**
      * Displays a single Ticket model.
      * @param integer $id
@@ -96,7 +149,7 @@ class TicketController extends Controller
      */
     public function actionView($id)
     {
-        return $this->render('view', [
+        return $this->render('view-quick', [
             'model' => $this->findModel($id),
         ]);
     }
