@@ -15,42 +15,37 @@ use kartik\export\ExportMenu;
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 
-$this->title = 'Total Tickets';
+$this->title = 'Total Check-In';
 $this->params['breadcrumbs'][] = $this->title;
+
+
+
+
 ?>
 <br><br><br>
 <div class="queue-display container">
     <div class="col-md-8 col-md-offset-2">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Total Statistics of Tickets</h3>
+                <h3 class="panel-title">Total people in the venue</h3>
             </div>
             <div class="panel-body">
                 <?php
                 $gridColumns = [
                     [
-                        'label' => 'Ticket Name',
-                        'attribute' => 'ticket_name',
-                        'value' => 'ticket_name',
+                        'label' => 'Role',
+                        'attribute' => 'role',
                         'hAlign' => 'left',
                         'vAlign' => 'middle',
                         'width' => '300px',
                     ],
                     [
-                        'attribute' => 'total',
-                        'label' => 'Total Registered',
+                        'label' => 'Total',
+                        'value' => 'total',
                         'hAlign' => 'center',
                         'vAlign' => 'middle',
-                        'width' => '10px',
-                        'pageSummary' => true,
-                    ],
-                    [
-                    'attribute' => 'role',
-                    'label' => 'Role',
-                    'hAlign' => 'center',
-                    'vAlign' => 'middle',
-                    'width' => '50px',
-                ]
+                        'width' => '50px',
+                    ]
                 ];
 
 
@@ -75,7 +70,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     'dataProvider' => $dataProvider,
                     'resizableColumns' => false,
                     'summary' => false,
-                    'showPageSummary' => true,
+//                    'showPageSummary' => true,
                     'headerRowOptions' => ['class' => 'kartik-sheet-style'],
                     'responsive' => true,
                     'pager' => false,

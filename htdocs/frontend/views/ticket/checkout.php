@@ -20,18 +20,15 @@ use kartik\form\ActiveForm;
 /* @var $dataProvider yii\data\ActiveDataProvider
  */
 
-$deleteTip = "Delete this client detail and all the attendances records.";
-$deleteMsg = "Are you sure you want to delete this client detail and all the attendances records?";
 
-
-$this->title = "  Exiting the hall";
+$this->title = "  Checkout - Exiting the venue";
 ?>
 
-    <div id="book-index-desktop" class="col-md-2">
+    <div id="book-index-desktop" class="col-md-4">
         <div id="barcode-search">
             <?php
             $form = ActiveForm::begin([
-                'action' => ['exiting'],
+                'action' => ['checkout'],
                 'method' => 'get',
             ]);
             echo $form->field($searchModel, 'barcodeSearch', [
@@ -40,7 +37,7 @@ $this->title = "  Exiting the hall";
                         'content' => '<i class="glyphicon glyphicon-credit-card"></i>'
                     ],
                     'append' => [
-                        'content' => Html::submitButton(Yii::t('backend', '<i class="glyphicon glyphicon-road"></i>'), ['class' => 'btn btn-view']),
+                        'content' => Html::submitButton(Yii::t('backend', '<i class="glyphicon glyphicon-log-out"></i>'), ['class' => 'btn btn-view']),
                         'asButton' => true
                     ]
                 ]
@@ -49,6 +46,7 @@ $this->title = "  Exiting the hall";
             ?>
 
             <?php ActiveForm::end(); ?>
+            <div id="current-day">Event day: <?php echo Yii::$app->keyStorage->get('frontend.current-day') ?> <?= Html::a('(change in settings)', ['/admin/key-storage/update?id=frontend.current-day']) ?></div>
         </div>
     </div>
 <?php

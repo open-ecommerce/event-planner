@@ -33,6 +33,7 @@ use kartik\form\ActiveForm;
         ]
     ])->textInput()->input('barcodeSearch', ['placeholder' => "Search by barcode"])->label(false);
 
+
 //
 //    echo jakobreiter\quaggajs\YiiQuagga::widget([
 //        "id" => 'codereader',

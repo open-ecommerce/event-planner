@@ -32,23 +32,17 @@ $deleteMsg = "Are you sure you want to delete this client ticket detail?";
             'width' => '30px',            
         ],
         [
-            'value' => function($model, $key, $index, $column) { return $model->direction == 0 ? 'Exiting' : 'Entring';},
+            'class' => 'kartik\grid\BooleanColumn',
+            'attribute' => 'direction',
+            //'value' => function($model, $key, $index, $column) { return $model->direction == 0 ? 'Exiting' : 'Entring';},
             'hAlign' => 'center',
             'vAlign' => 'middle',
             'width' => '30px',
+            'contentOptions' => function ($model, $key, $index, $column) {
+                return [$model->direction == 0 ? 'red' : 'blue'];
+            },
         ],
-        [
-            'class' => 'kartik\grid\ActionColumn',
-            'header' => 'Delete',
-            'template' => '{delete}',
-            'deleteOptions' => ['label' => '<i class="glyphicon glyphicon-trash"></i>'],
-            'deleteOptions' => ['title' => $deleteTip, 'data-toggle' => 'tooltip', 'data-confirm' => $deleteMsg],
-        ],        
-        
-        
-//        [
-//            'class' => 'kartik\grid\ActionColumn',
-//        ],
+
     ];
     ?>
 

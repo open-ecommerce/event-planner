@@ -6,6 +6,7 @@ use Yii;
 use \common\models\base\Ticket as BaseTicket;
 use yii\helpers\ArrayHelper;
 use common\models\TicketType;
+use common\models\TicketAttendance;
 
 /**
  * This is the model class for table "ticket".
@@ -36,4 +37,13 @@ class Ticket extends BaseTicket {
         }
 
         return $this->thumbnail_path ? Yii::getAlias($this->thumbnail_base_url . '/' . $this->thumbnail_path) : $default;
-    }}
+    }
+
+
+
+
+
+    public function getTicketAttendandance() {
+        return $this->hasOne(TicketAttendance::className(), ['id' => 'ticket_id']);
+    }
+}

@@ -31,6 +31,10 @@ class SiteController extends \yii\web\Controller
     {
         $model = new FormModel([
             'keys' => [
+                'frontend.current-day' => [
+                    'label' => Yii::t('backend', 'Current event day'),
+                    'type' => FormModel::TYPE_TEXTINPUT
+                ],
                 'frontend.maintenance' => [
                     'label' => Yii::t('backend', 'Frontend maintenance mode'),
                     'type' => FormModel::TYPE_DROPDOWN,

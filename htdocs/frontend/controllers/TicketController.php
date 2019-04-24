@@ -2,10 +2,13 @@
 
 namespace frontend\controllers;
 
-use common\models\TotalTickets;
+use common\models\TotalCheckin;
 use Yii;
 use common\models\Ticket;
+use common\models\TotalTickets;
 use frontend\models\search\TicketSearch;
+use frontend\models\search\TotalTicketsSearch;
+use frontend\models\search\TotalCheckinSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -18,6 +21,7 @@ use common\models\TicketDates;
 use common\models\TicketAttendance;
 use yii\data\ActiveDataProvider;
 use yii\helpers\ArrayHelper;
+use yii\data\SqlDataProvider;
 
 /**
  * TicketController implements the CRUD actions for Ticket model.
@@ -73,16 +77,16 @@ class TicketController extends Controller
         }
 
         //add new record if scanning and found
-        if ((!empty($isBarcode)) && ($dataProvider->getTotalCount() == 1)) {
-            $newQuery = clone $dataProvider->query;
-            $currentTicket = $newQuery->limit(1)->one();
-            $attendance = new TicketAttendance();
-            $attendance->ticket_id = $currentTicket->id;
-            $attendance->venue_id = 1;
-            $attendance->attendance = date("Y-m-d H:i:s");
-            $attendance->direction = 1;
-            $attendance->save(false);
-        }
+//        if ((!empty($isBarcode)) && ($dataProvider->getTotalCount() == 1)) {
+//            $newQuery = clone $dataProvider->query;
+//            $currentTicket = $newQuery->limit(1)->one();
+//            $attendance = new TicketAttendance();
+//            $attendance->ticket_id = $currentTicket->id;
+//            $attendance->venue_id = 1;
+//            $attendance->attendance = date("Y-m-d H:i:s");
+//            $attendance->direction = 1;
+//            $attendance->save(false);
+//        }
 
         return $this->render('index', [
             'searchModel' => $searchModel,
@@ -95,7 +99,7 @@ class TicketController extends Controller
      * Lists all Ticket models.
      * @return mixed
      */
-    public function actionExiting()
+    public function actionCheckout()
     {
 
         $requestBarcode = Yii::$app->request->queryParams;
@@ -135,9 +139,67 @@ class TicketController extends Controller
             $attendance->save(false);
         }
 
-        return $this->render('exiting', [
+        return $this->render('checkout', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
+        ]);
+    }
+
+    public function actionCheckin()
+    {
+        $requestBarcode = Yii::$app->request->queryParams;
+        $isBarcode = arrayHelper::getvalue($requestBarcode, 'TicketSearch.barcodeSearch');
+
+        $searchModel = new TicketSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $this->layout = 'main_full_width';
+        $whereIs = "I don't know";
+        $lastAttendance = "";
+        $problem = "";
+
+
+        //add new record if scanning and found
+        if ((!empty($isBarcode)) && ($dataProvider->getTotalCount() == 1)) {
+            $newQuery = clone $dataProvider->query;
+            $currentTicket = $newQuery->limit(1)->one();
+
+            $qryAttendance = clone $dataProvider->query;
+            $lastAttendance = $qryAttendance->findLastAttendanceByTicketId($currentTicket->id);
+            if (!empty($lastAttendance)) {
+                if ($lastAttendance->direction === 1) {
+                    $whereIs = "Already inside, has entered at: " . \Yii::$app->formatter->format($lastAttendance->attendance, 'datetime');
+                    $problem = "problem";
+                } else {
+                    $problem = "no-problem";
+                    $whereIs = "Has exit at: " . $lastAttendance->attendance;
+                    $attendance = new TicketAttendance();
+                    $attendance->ticket_id = $currentTicket->id;
+                    $attendance->venue_id = 1;
+                    $attendance->attendance = date("Y-m-d H:i:s");
+                    $attendance->direction = 1;
+                    $attendance->save(false);
+                }
+            } else {
+                $whereIs = "First time entering today";
+                $attendance = new TicketAttendance();
+                $attendance->ticket_id = $currentTicket->id;
+                $attendance->venue_id = 1;
+                $attendance->attendance = date("Y-m-d H:i:s");
+                $attendance->direction = 1;
+                $attendance->save(false);
+                $problem = "no-problem";
+            }
+
+        } else {
+            $dataProvider = "";
+        }
+
+        return $this->render('checkin', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+            'lastCheck' => $lastAttendance,
+            'whereIs' => $whereIs,
+            'problem' => $problem,
         ]);
     }
 
@@ -149,20 +211,50 @@ class TicketController extends Controller
      */
     public function actionView($id)
     {
-        return $this->render('view-quick', [
-            'model' => $this->findModel($id),
+//        return $this->render('view-quick', [
+//            'model' => $this->findModel($id),
+//        ]);
+//
+
+        {
+            $model = $this->findModel($id);
+
+            if ($model->load(Yii::$app->request->post()) && $model->save()) {
+                return $this->redirect(['index']);
+            } else {
+                return $this->render('view-quick', [
+                    'model' => $model,
+                    'ticketType' => TicketType::find()->all(),
+                ]);
+            }
+        }
+
+    }
+
+
+    public function actionTotalTickets() {
+        $searchModel = new TotalTicketsSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
+        return $this->render('total-tickets', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
         ]);
     }
 
 
-    public function actionTotalTickets()
-    {
-        $model = TotalTickets::find()->all();
-        $dataProvider = new ActiveDataProvider([
-            'query' => $model
+
+    public function actionTotalCheckin() {
+
+
+        $dataProvider = new SqlDataProvider([
+            'sql' => TotalCheckin::findCheckinToday(),
         ]);
 
-        return $this->render('total-tickets', [
+
+
+
+        return $this->render('total-checkin', [
             'dataProvider' => $dataProvider,
         ]);
     }
@@ -265,7 +357,30 @@ class TicketController extends Controller
                 'dataProvider' => $dataProvider,
             ]);
         } else {
-            return '<div class="alert alert-danger">No data found with id:' . $ID . '</div>';
+            return '<div class="alert alert-danger">No data found</div>';
+        }
+    }
+    public function actionDetailtoday()
+    {
+        $fromDate = Yii::$app->keyStorage->get('frontend.current-day');
+
+        if (isset($_POST['expandRowKey'])) {
+            $ID = Yii::$app->request->post('expandRowKey');
+            $model = TicketAttendance::find()
+                ->where(['ticket_id' => $ID])
+                ->andWhere('attendance > "' . $fromDate .'"')
+                ->orderBy('attendance desc');
+
+            $dataProvider = new ActiveDataProvider([
+                'query' => $model,
+                'pagination' => ['pageSize' => 20,],
+            ]);
+            $this->layout = '_only-content';
+            return $this->render('_grid_attendance-details', [
+                'dataProvider' => $dataProvider,
+            ]);
+        } else {
+            return '<div class="alert alert-danger">No data found</div>';
         }
     }
 

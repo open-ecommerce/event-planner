@@ -37,8 +37,8 @@ $this->title = "  List of Tickets";
 
     $gridColumns = [
         [
-            'attribute' => 'id',
-            'width' => '5px',
+            'attribute' => 'email',
+            'width' => '10px',
         ],
         [
             'attribute' => 'order_id',
@@ -114,23 +114,23 @@ $this->title = "  List of Tickets";
             'format' => 'raw'
         ],
         [
-            'attribute' => 'last_name',
-            'vAlign' => 'middle',
-            'vAlign' => 'middle',
-            'width' => '50px',
-            'value' => function ($model, $key, $index, $widget) {
-                return Html::a($model->last_name, '/ticket/' . $model->id, ['title' => 'View ticket', 'target' => '_blank', 'alt' => 'Link to View',]);
-            },
-            'format' => 'raw'
-        ],
-        [
             'attribute' => 'first_name',
             'vAlign' => 'middle',
             'vAlign' => 'middle',
             'width' => '50px',
-            'value' => function ($model, $key, $index, $widget) {
-                return Html::a($model->first_name, '/ticket/' . $model->id, ['title' => 'View ticket', 'target' => '_blank', 'alt' => 'Link to View',]);
-            },
+//            'value' => function ($model, $key, $index, $widget) {
+//                return Html::a($model->first_name, '/ticket/' . $model->id, ['title' => 'View ticket', 'target' => '_blank', 'alt' => 'Link to View',]);
+//            },
+            'format' => 'raw'
+        ],
+        [
+            'attribute' => 'last_name',
+            'vAlign' => 'middle',
+            'vAlign' => 'middle',
+            'width' => '50px',
+//            'value' => function ($model, $key, $index, $widget) {
+//                return Html::a($model->last_name, '/ticket/' . $model->id, ['title' => 'View ticket', 'target' => '_blank', 'alt' => 'Link to View',]);
+//            },
             'format' => 'raw'
         ],
         [

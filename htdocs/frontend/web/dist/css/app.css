@@ -7,85 +7,19 @@ and open the template in the editor.
     Created on : 18-Oct-2016, 19:09:39
     Author     : developer
 */
-@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-@font-face {
-  font-family: 'Lekton';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lekton'), local('Lekton-Regular'), url(http://fonts.gstatic.com/s/lekton/v9/SZc43FDmLaWmWpBuWB3s.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Lekton';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lekton-Bold'), url(http://fonts.gstatic.com/s/lekton/v9/SZc73FDmLaWmWpBm4zj8kmLT.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(http://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(http://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_dJE3gnD-w.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Roboto Bold'), local('Roboto-Bold'), url(http://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto Mono'), local('RobotoMono-Regular'), url(http://fonts.gstatic.com/s/robotomono/v5/L0x5DF4xlVMF-BfR8bXMIjhLq3o.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto Mono';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Roboto Mono Bold'), local('RobotoMono-Bold'), url(http://fonts.gstatic.com/s/robotomono/v5/L0xkDF4xlVMF-BfR8bXMIjDwjmqxf7o.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 100;
-  src: local('Roboto Slab Thin'), local('RobotoSlab-Thin'), url(http://fonts.gstatic.com/s/robotoslab/v7/BngOUXZYTXPIvIBgJJSb6u-u1qeh4Q.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(http://fonts.gstatic.com/s/robotoslab/v7/BngMUXZYTXPIvIBgJJSb6ufN5qA.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(http://fonts.gstatic.com/s/robotoslab/v7/BngRUXZYTXPIvIBgJJSb6u92w7CGwRg.ttf) format('truetype');
-}
+@import url(//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Mono:400,700|Roboto+Slab:100,400,700|Roboto:400,700|Lekton:400,700);
 /*
 font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Mono', monospace;
 font-family: 'Roboto Slab', serif;
 font-family: 'Montserrat', sans-serif;
 */
+@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 .box {
   color: #fe33ac;
   border-color: #fdcdea;
 }
 .box div {
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 .site-index {
@@ -95,8 +29,6 @@ html,
 body {
   height: auto;
   font-family: 'Roboto', sans-serif;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   background-color: #fff;
@@ -416,10 +348,7 @@ nav#main-menu.navbar.navbar-fixed-top.guest a.navbar-brand img {
 .panel {
   border-width: 0;
   border-top-width: 3px;
-  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.5);
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
 }
 .panel-default {
@@ -444,10 +373,7 @@ nav#main-menu.navbar.navbar-fixed-top.guest a.navbar-brand img {
   border-top-color: #eeeeee;
 }
 .progress {
-  -webkit-box-shadow: 0 -1px 0px rgba(0, 0, 0, 0.1) inset rgba(0, 0, 0, 0.5);
   box-shadow: 0 -1px 0px rgba(0, 0, 0, 0.1) inset rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 -1px 0px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow: 0 -1px 0px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 -1px 0px rgba(0, 0, 0, 0.1) inset;
 }
 .well {
@@ -538,7 +464,6 @@ div#top-toolbar .open > .dropdown-toggle.btn-default {
 }
 div#top-toolbar .btn:active,
 div#top-toolbar .btn.active {
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0);
 }
 /*!
@@ -812,7 +737,8 @@ button#extended-search-lnk {
 #book-detail #wrap-book #main .cover :hover {
   animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   perspective: 1000px;
 }
 #book-detail #wrap-book #main .category {
@@ -821,6 +747,7 @@ button#extended-search-lnk {
   font-size: 0.9em;
   display: inline;
   font-weight: 700;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   margin-left: 15px;
 }
@@ -1090,7 +1017,8 @@ button#extended-search-lnk {
 #book-detail #wrap-downloads ul li .download-attachments :hover {
   animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   perspective: 1000px;
 }
 #book-detail #wrap-rights {
@@ -1139,10 +1067,8 @@ button#extended-search-lnk {
   font-weight: 500;
   line-height: 1.3em;
   max-height: 125px;
-  -webkit-column-count: 4;
   -moz-column-count: 4;
   column-count: 4;
-  -webkit-column-width: 100px;
   -moz-column-width: 100px;
   column-width: 100px;
 }
@@ -1338,6 +1264,27 @@ i.glyphicon.glyphicon-asterisk.books-form {
   color: #fff;
   background-color: #5cb85c;
   border-color: #4cae4c;
+}
+div#checkin-attendance-desktop {
+  min-height: 300px;
+}
+div#checkin-attendance-desktop .checkin-header {
+  margin-top: 59px;
+}
+div#checkin-attendance-desktop.problem {
+  background-color: red;
+}
+div#checkin-attendance-desktop.no-problem {
+  background-color: #daefda;
+}
+#barcode-search.checkin {
+  float: left;
+  margin-top: 14px;
+  padding: 0 10px 0 11px;
+  max-width: 400px;
+}
+.ticket-view {
+  margin-top: 90px;
 }
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -1682,25 +1629,23 @@ nav#main-menu.navbar.guest.login a.navbar-brand {
   background-color: #2E2D2E;
 }
 #view-profile figure.profile * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
 #view-profile figure.profile .image {
   width: 322px;
   overflow: hidden;
   z-index: 1;
-  -webkit-transform: skewX(-15deg);
-  transform: skewX(-15deg);
+  -ms-transform: skewX(-15deg);
+      transform: skewX(-15deg);
 }
 #view-profile figure.profile .image img {
   position: relative;
   display: block;
   left: -15%;
   z-index: 1;
-  -webkit-transform: skew(15deg);
-  transform: skew(15deg);
+  -ms-transform: skew(15deg);
+      transform: skew(15deg);
 }
 #view-profile figure.profile:before {
   position: absolute;
@@ -1708,9 +1653,8 @@ nav#main-menu.navbar.guest.login a.navbar-brand {
   height: 100%;
   width: 313px;
   background: rgba(0, 0, 0, 0.2);
-  -webkit-transform: skewX(-17deg);
-  transform: skewX(-17deg);
-  -webkit-box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
+  -ms-transform: skewX(-17deg);
+      transform: skewX(-17deg);
   box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
 }
 #view-profile figure.profile figcaption {
@@ -1781,12 +1725,10 @@ nav#main-menu.navbar.guest.login a.navbar-brand {
 #view-profile figure.profile:hover .icons i,
 #view-profile figure.profile.hover .icons i {
   opacity: 1;
-  -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
 #view-profile figure.profile:hover:before,
 #view-profile figure.profile.hover:before {
-  -webkit-animation: shadow 0.6s ease-in-out;
   animation: shadow 0.6s ease-in-out;
 }
 #view-profile div#col-detail {
@@ -1910,11 +1852,7 @@ button.viewProfileInfo {
   margin-top: 1em;
   margin-right: 1em;
   position: relative;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   border-radius: 50%;
-  -webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0, 0, 0, 0.2);
 }
 ul#w0.navbar-nav.navbar-right.guest.nav li {
@@ -1942,10 +1880,10 @@ svg {
   margin: 0;
 }
 #svg-logo .base {
-  fill: hsl(145, 63%, 22%);
+  fill: #155b32;
 }
 #svg-logo .cls-6 {
-  fill: hsl(53, 100%, 44%);
+  fill: #e0c600;
   -webkit-animation-name: glow-green;
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: 1;
@@ -1958,20 +1896,12 @@ svg {
   animation-direction: normal;
   -moz-animation: none;
 }
-@-webkit-keyframes glow-green {
-  0% {
-    fill: hsl(39, 56%, 93%);
-  }
-  100% {
-    fill: hsl(53, 100%, 44%);
-  }
-}
 @keyframes glow-green {
   0% {
-    fill: hsl(39, 56%, 93%);
+    fill: #f7f0e3;
   }
   100% {
-    fill: hsl(53, 100%, 44%);
+    fill: #e0c600;
   }
 }
 img#logo-aboutus {

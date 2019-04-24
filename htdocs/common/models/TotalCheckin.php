@@ -3,14 +3,12 @@
 namespace common\models;
 
 use Yii;
-use \common\models\base\Ticket as BaseTicket;
 use yii\helpers\ArrayHelper;
-use common\models\TicketType;
 
 /**
  * This is the model class for table "ticket".
  */
-class TotalTickets extends base\TotalTickets {
+class TotalCheckin extends base\TotalCheckin {
     public function behaviors()
     {
         return ArrayHelper::merge(
@@ -30,5 +28,21 @@ class TotalTickets extends base\TotalTickets {
             ]
         );
     }
+
+    /**
+     * @param string $name
+     * @return Tag[]
+     */
+    public function findCheckinToday()
+    {
+        $fromDate = Yii::$app->keyStorage->get('frontend.current-day');
+        $sqlQuery = "select role, count(role) as total from qry_checkin where attendance > '" . $fromDate . "' group BY role ORDER BY role";
+        return $sqlQuery;
+
+    }
+
+
+
+
 
 }

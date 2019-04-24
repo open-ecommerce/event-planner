@@ -15,7 +15,7 @@ use Yii;
  * @property string $role
  * @property string $aliasModel
  */
-abstract class TotalTickets extends \yii\db\ActiveRecord
+abstract class TotalCheckin extends \yii\db\ActiveRecord
 {
 
 
@@ -25,7 +25,7 @@ abstract class TotalTickets extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'qry_total_tickets';
+        return 'qry_checkin';
     }
 
     /**
@@ -34,9 +34,9 @@ abstract class TotalTickets extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['total'], 'integer'],
-            [['ticket_name'], 'string', 'max' => 200],
-            [['role'], 'string', 'max' => 50]
+            [['name'], 'string', 'max' => 200],
+            [['role'], 'string', 'max' => 50],
+            [['attandance'], 'safe']
         ];
     }
 
@@ -47,22 +47,27 @@ abstract class TotalTickets extends \yii\db\ActiveRecord
     {
         return [
 //            'id' => Yii::t('models', 'ID'),
-            'ticket_name' => Yii::t('models', 'Ticket Name'),
-            'total' => Yii::t('models', 'Total'),
+            'name' => Yii::t('models', 'Ticket Name'),
+            'attendance' => Yii::t('models', 'Time Checkin'),
             'role' => Yii::t('models', 'Role'),
         ];
     }
 
 
-    
-    /**
-     * @inheritdoc
-     * @return \app\modules\crud\models\query\QryTotalTicketQuery the active query used by this AR class.
-     */
-    public static function find()
-    {
-        return new \common\models\query\TicketQuery(get_called_class());
-    }
-
-
+//
+//    /**
+//     * @inheritdoc
+//     * @return \app\modules\crud\models\query\QryTotalTicketQuery the active query used by this AR class.
+//     */
+//    public static function find()
+//    {
+//        return new \common\models\query\CheckinQuery(get_called_class());
+//
+//    }
+//
+//    public static function findCheckinToday()
+//    {
+//        return new \common\models\query\CheckinQuery(get_called_class());
+//
+//    }
 }

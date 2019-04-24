@@ -15,7 +15,7 @@ use kartik\export\ExportMenu;
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 
-$this->title = 'Total Tickets';
+$this->title = 'Who is in';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <br><br><br>
@@ -23,7 +23,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="col-md-8 col-md-offset-2">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Total Statistics of Tickets</h3>
+                <h3 class="panel-title">Who is in today</h3>
             </div>
             <div class="panel-body">
                 <?php
