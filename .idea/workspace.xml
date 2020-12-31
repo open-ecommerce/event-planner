@@ -1,31 +1,639 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f00e8d2-37ab-4927-a68c-0207eed2d68f" name="Default" comment="" />
-    <option name="TRACKING_ENABLED" value="true" />
+    <list default="true" id="7f00e8d2-37ab-4927-a68c-0207eed2d68f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/event-planner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/event-planner.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/mail/templates/_email-html.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/mail/templates/_email-html.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/mail/templates/_email-text.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/mail/templates/_email-text.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/views/newsletter/views/main/_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/views/newsletter/views/main/_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/views/newsletter/views/main/_form2.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/views/newsletter/views/main/_form2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/views/newsletter/views/main/_search.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/views/newsletter/views/main/_search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/views/newsletter/views/main/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/views/newsletter/views/main/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/views/newsletter/views/main/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/views/newsletter/views/main/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/views/newsletter/views/main/sending.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/views/newsletter/views/main/sending.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/views/newsletter/views/main/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/views/newsletter/views/main/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/views/newsletter/views/main/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/views/newsletter/views/main/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/.github/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/.github/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/.github/ISSUE_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/.github/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/.github/PULL_REQUEST_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/CHANGE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/CHANGE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/css/star-rating.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/css/star-rating.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/css/star-rating.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/css/star-rating.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/examples/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/examples/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/examples/sample.html" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/examples/sample.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/img/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/img/loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/LANG.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/LANG.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/ar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/fa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/it.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/ko.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/pt-BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/pt-BR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/ro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/tr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/ua.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/ua.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/zh.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/locales/zh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/star-rating.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/star-rating.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/star-rating.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/js/star-rating.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/themes/krajee-fa/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/themes/krajee-fa/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/themes/krajee-fa/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/themes/krajee-fa/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/themes/krajee-fa/theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/themes/krajee-fa/theme.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/themes/krajee-fa/theme.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/themes/krajee-fa/theme.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/themes/krajee-svg/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/themes/krajee-svg/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/themes/krajee-svg/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/themes/krajee-svg/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/themes/krajee-svg/theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/themes/krajee-svg/theme.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/themes/krajee-svg/theme.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/themes/krajee-svg/theme.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/themes/krajee-uni/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/themes/krajee-uni/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/themes/krajee-uni/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/themes/krajee-uni/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/themes/krajee-uni/theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/themes/krajee-uni/theme.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/themes/krajee-uni/theme.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/38e006c9/themes/krajee-uni/theme.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/.github/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/.github/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/.github/ISSUE_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/.github/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/.github/PULL_REQUEST_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/CHANGE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/CHANGE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/css/dependent-dropdown.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/css/dependent-dropdown.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/css/dependent-dropdown.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/css/dependent-dropdown.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/img/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/img/loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/js/dependent-dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/js/dependent-dropdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/js/dependent-dropdown.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/js/dependent-dropdown.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/js/locales/LANG.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/js/locales/LANG.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/js/locales/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/js/locales/de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/js/locales/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/js/locales/es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/js/locales/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/js/locales/fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/js/locales/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/js/locales/it.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/js/locales/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/js/locales/pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/js/locales/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/js/locales/pt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/js/locales/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/js/locales/ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/3b8a04ee/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/.github/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/.github/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/.github/ISSUE_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/.github/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/.github/PULL_REQUEST_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/CHANGE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/CHANGE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/css/dependent-dropdown.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/css/dependent-dropdown.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/css/dependent-dropdown.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/css/dependent-dropdown.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/img/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/img/loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/js/dependent-dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/js/dependent-dropdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/js/dependent-dropdown.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/js/dependent-dropdown.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/js/locales/LANG.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/js/locales/LANG.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/js/locales/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/js/locales/de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/js/locales/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/js/locales/es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/js/locales/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/js/locales/fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/js/locales/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/js/locales/it.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/js/locales/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/js/locales/pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/js/locales/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/js/locales/pt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/js/locales/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/js/locales/ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/4c52b8db/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/.github/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/.github/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/.github/ISSUE_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/.github/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/.github/PULL_REQUEST_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/CHANGE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/CHANGE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/css/dependent-dropdown.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/css/dependent-dropdown.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/css/dependent-dropdown.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/css/dependent-dropdown.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/img/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/img/loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/js/dependent-dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/js/dependent-dropdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/js/dependent-dropdown.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/js/dependent-dropdown.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/js/locales/LANG.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/js/locales/LANG.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/js/locales/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/js/locales/de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/js/locales/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/js/locales/es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/js/locales/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/js/locales/fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/js/locales/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/js/locales/it.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/js/locales/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/js/locales/pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/js/locales/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/js/locales/pt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/js/locales/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/js/locales/ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/86c4922d/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/.github/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/.github/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/.github/ISSUE_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/.github/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/.github/PULL_REQUEST_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/CHANGE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/CHANGE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/css/dependent-dropdown.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/css/dependent-dropdown.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/css/dependent-dropdown.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/css/dependent-dropdown.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/img/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/img/loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/js/dependent-dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/js/dependent-dropdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/js/dependent-dropdown.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/js/dependent-dropdown.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/js/locales/LANG.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/js/locales/LANG.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/js/locales/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/js/locales/de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/js/locales/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/js/locales/es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/js/locales/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/js/locales/fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/js/locales/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/js/locales/it.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/js/locales/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/js/locales/pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/js/locales/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/js/locales/pt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/js/locales/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/js/locales/ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/8bc6b45a/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/.github/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/.github/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/.github/ISSUE_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/.github/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/.github/PULL_REQUEST_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/CHANGE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/CHANGE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/css/star-rating.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/css/star-rating.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/css/star-rating.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/css/star-rating.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/examples/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/examples/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/examples/sample.html" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/examples/sample.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/img/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/img/loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/LANG.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/LANG.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/ar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/fa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/it.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/ko.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/pt-BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/pt-BR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/ro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/tr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/ua.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/ua.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/zh.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/locales/zh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/star-rating.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/star-rating.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/star-rating.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/js/star-rating.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/themes/krajee-fa/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/themes/krajee-fa/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/themes/krajee-fa/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/themes/krajee-fa/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/themes/krajee-fa/theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/themes/krajee-fa/theme.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/themes/krajee-fa/theme.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/themes/krajee-fa/theme.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/themes/krajee-svg/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/themes/krajee-svg/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/themes/krajee-svg/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/themes/krajee-svg/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/themes/krajee-svg/theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/themes/krajee-svg/theme.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/themes/krajee-svg/theme.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/themes/krajee-svg/theme.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/themes/krajee-uni/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/themes/krajee-uni/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/themes/krajee-uni/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/themes/krajee-uni/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/themes/krajee-uni/theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/themes/krajee-uni/theme.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/themes/krajee-uni/theme.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/a51df276/themes/krajee-uni/theme.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/.github/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/.github/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/.github/ISSUE_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/.github/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/.github/PULL_REQUEST_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/CHANGE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/CHANGE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/css/star-rating.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/css/star-rating.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/css/star-rating.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/css/star-rating.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/examples/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/examples/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/examples/sample.html" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/examples/sample.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/img/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/img/loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/LANG.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/LANG.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/ar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/fa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/it.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/ko.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/pt-BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/pt-BR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/ro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/tr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/ua.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/ua.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/zh.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/locales/zh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/star-rating.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/star-rating.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/star-rating.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/js/star-rating.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/themes/krajee-fa/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/themes/krajee-fa/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/themes/krajee-fa/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/themes/krajee-fa/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/themes/krajee-fa/theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/themes/krajee-fa/theme.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/themes/krajee-fa/theme.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/themes/krajee-fa/theme.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/themes/krajee-svg/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/themes/krajee-svg/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/themes/krajee-svg/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/themes/krajee-svg/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/themes/krajee-svg/theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/themes/krajee-svg/theme.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/themes/krajee-svg/theme.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/themes/krajee-svg/theme.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/themes/krajee-uni/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/themes/krajee-uni/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/themes/krajee-uni/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/themes/krajee-uni/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/themes/krajee-uni/theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/themes/krajee-uni/theme.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/themes/krajee-uni/theme.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/aa991c57/themes/krajee-uni/theme.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/.github/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/.github/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/.github/ISSUE_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/.github/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/.github/PULL_REQUEST_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/CHANGE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/CHANGE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/css/dependent-dropdown.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/css/dependent-dropdown.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/css/dependent-dropdown.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/css/dependent-dropdown.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/img/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/img/loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/js/dependent-dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/js/dependent-dropdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/js/dependent-dropdown.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/js/dependent-dropdown.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/js/locales/LANG.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/js/locales/LANG.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/js/locales/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/js/locales/de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/js/locales/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/js/locales/es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/js/locales/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/js/locales/fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/js/locales/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/js/locales/it.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/js/locales/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/js/locales/pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/js/locales/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/js/locales/pt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/js/locales/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/js/locales/ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/web/assets/be64da49/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/common/gii/ticket_attendanceGiiantModel.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/common/gii/ticket_attendanceGiiantModel.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/common/gii/ticket_datesGiiantModel.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/common/gii/ticket_datesGiiantModel.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/common/gii/ticket_typeGiiantModel.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/common/gii/ticket_typeGiiantModel.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/common/gii/venueGiiantModel.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/common/gii/venueGiiantModel.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/common/models/TicketAttendance.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/common/models/TicketAttendance.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/common/models/TicketAttendanceQuery.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/common/models/TicketAttendanceQuery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/common/models/TicketDates.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/common/models/TicketDates.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/common/models/TicketDatesQuery.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/common/models/TicketDatesQuery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/common/models/TicketType.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/common/models/TicketType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/common/models/TicketTypeQuery.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/common/models/TicketTypeQuery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/common/models/Venue.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/common/models/Venue.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/common/models/VenueQuery.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/common/models/VenueQuery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/common/models/base/TicketAttendance.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/common/models/base/TicketAttendance.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/common/models/base/TicketDates.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/common/models/base/TicketDates.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/common/models/base/TicketType.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/common/models/base/TicketType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/common/models/base/TotalCheckin.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/common/models/base/TotalCheckin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/common/models/base/TotalTickets.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/common/models/base/TotalTickets.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/common/models/base/Venue.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/common/models/base/Venue.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/common/models/query/QryTotalTicketQuery.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/common/models/query/QryTotalTicketQuery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/console/.phptidy-cache" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/console/.phptidy-cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/console/modules/crud/gii/qry_total_ticketsGiiantModel.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/console/modules/crud/gii/qry_total_ticketsGiiantModel.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/console/modules/crud/models/QryTotalTicket.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/console/modules/crud/models/QryTotalTicket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/console/modules/crud/models/base/QryTotalTicket.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/console/modules/crud/models/base/QryTotalTicket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/console/modules/crud/models/query/QryTotalTicketQuery.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/console/modules/crud/models/query/QryTotalTicketQuery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/controllers/FileStorageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/controllers/FileStorageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/views/layouts/_only-content.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/views/layouts/_only-content.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/views/ticket/_grid_attendance-details.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/views/ticket/_grid_attendance-details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/web/dist/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/web/dist/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/web/dist/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/web/dist/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/web/dist/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/web/dist/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/web/dist/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/web/dist/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/web/dist/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/web/dist/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/web/dist/img/favicons/android-chrome-192x192.png" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/web/dist/img/favicons/android-chrome-192x192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/web/dist/img/favicons/android-chrome-384x384.png" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/web/dist/img/favicons/android-chrome-384x384.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/web/dist/img/favicons/apple-touch-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/web/dist/img/favicons/apple-touch-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/web/dist/img/favicons/browserconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/web/dist/img/favicons/browserconfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/web/dist/img/favicons/favicon-16x16.png" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/web/dist/img/favicons/favicon-16x16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/web/dist/img/favicons/favicon-32x32.png" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/web/dist/img/favicons/favicon-32x32.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/web/dist/img/favicons/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/web/dist/img/favicons/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/web/dist/img/favicons/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/web/dist/img/favicons/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/web/dist/img/favicons/mstile-150x150.png" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/web/dist/img/favicons/mstile-150x150.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/web/dist/img/favicons/safari-pinned-tab.svg" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/web/dist/img/favicons/safari-pinned-tab.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/web/dist/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/web/dist/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/web/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/web/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/web/img/favicons/android-chrome-192x192.png" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/web/img/favicons/android-chrome-192x192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/web/img/favicons/android-chrome-384x384.png" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/web/img/favicons/android-chrome-384x384.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/web/img/favicons/apple-touch-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/web/img/favicons/apple-touch-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/web/img/favicons/browserconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/web/img/favicons/browserconfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/web/img/favicons/favicon-16x16.png" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/web/img/favicons/favicon-16x16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/web/img/favicons/favicon-32x32.png" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/web/img/favicons/favicon-32x32.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/web/img/favicons/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/web/img/favicons/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/web/img/favicons/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/web/img/favicons/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/web/img/favicons/mstile-150x150.png" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/web/img/favicons/mstile-150x150.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/frontend/web/img/favicons/safari-pinned-tab.svg" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/frontend/web/img/favicons/safari-pinned-tab.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/emails/basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/local/emails/basic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/emails/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/local/emails/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/emails/drip.html" beforeDir="false" afterPath="$PROJECT_DIR$/local/emails/drip.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/emails/hero.html" beforeDir="false" afterPath="$PROJECT_DIR$/local/emails/hero.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/emails/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/local/emails/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/emails/marketing.html" beforeDir="false" afterPath="$PROJECT_DIR$/local/emails/marketing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/emails/newsletter-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/local/emails/newsletter-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/emails/newsletter.html" beforeDir="false" afterPath="$PROJECT_DIR$/local/emails/newsletter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/emails/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/local/emails/order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/emails/password.html" beforeDir="false" afterPath="$PROJECT_DIR$/local/emails/password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/emails/sidebar-hero.html" beforeDir="false" afterPath="$PROJECT_DIR$/local/emails/sidebar-hero.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/emails/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/local/emails/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/emails/single-book.html" beforeDir="false" afterPath="$PROJECT_DIR$/local/emails/single-book.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/emails/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/local/emails/welcome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mstp.dev.conf" beforeDir="false" afterPath="$PROJECT_DIR$/mstp.dev.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing.html" beforeDir="false" afterPath="$PROJECT_DIR$/testing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing.php" beforeDir="false" afterPath="$PROJECT_DIR$/testing.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/htdocs/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/htdocs/vendor/dmstr/yii2-db" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/dmstr/yii2-bootstrap" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/jlorente/yii2-widget-remainingcharacters" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/dmstr/yii2-helpers" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-sidenav" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-depdrop" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/open-ecommerce/yii2-kartik-trivalent" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-editable" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/open-ecommerce/yii2-backuprestore" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-sortable" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-switchinput" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-grid" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-detail-view" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/bootstrap-fileinput" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-tabs-x" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-spinner" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-dialog" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-mpdf" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-affix" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-select2" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-checkbox-x" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-popover-x" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-colorinput" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-dynagrid" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/dependent-dropdown" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-touchspin" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widgets" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-growl" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-fileinput" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-export" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-alert" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-datecontrol" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/behat/gherkin" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-activeform" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/mihaildev/yii2-elfinder" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-timepicker" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/bootstrap-tabs-x" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-helpers" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-typeahead" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/bootstrap-checkbox-x" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-field-range" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-datetimepicker" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-tree-manager" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-rangeinput" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-rating" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/asofter/yii2-imperavi-redactor" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-date-range" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/bootstrap-star-rating" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-datepicker" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/bootstrap-popover-x" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/php-date-formatter" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-krajee-base" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/rmrevin/yii2-fontawesome" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/demogorgorn/yii2-ajax-submit-button" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/phpoffice/phpspreadsheet" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/fortawesome/font-awesome" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yiisoft/yii2-composer" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yiisoft/yii2-authclient" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/sammaye/yii2-qtip" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yiisoft/yii2-imagine" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yiisoft/yii2-gii" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yiisoft/yii2-debug" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/marqu3s/yii2-summernote" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yiisoft/yii2-jui" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/pheme/yii2-toggle-column" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yiisoft/yii2-httpclient" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yiisoft/yii2-faker" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yiisoft/yii2-codeception" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yiisoft/yii2-bootstrap" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yiisoft/yii2-swiftmailer" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/pheme/yii2-settings" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yiisoft/yii2-elasticsearch" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/ckeditor/ckeditor" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/dpodium/yii2-widget-upload-crop" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/studio-42/elfinder" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/trntv/yii2-command-bus" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/trntv/cheatsheet" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/trntv/yii2-glide" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/trntv/probe" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/trntv/yii2-aceeditor" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/trntv/yii2-file-kit" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/trntv/yii2-datetime-widget" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/composer" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/font-awesome" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/bootstrap" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/blueimp-file-upload" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/blueimp-tmpl" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/moment" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/jquery" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/clipboard" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/summernote" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/telex" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/schmunk42/retry" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/flot" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/schmunk42/yii2-giiant" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/jquery-remaining-characters" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/typeahead.js" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/selectize" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/microplugin" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/blueimp-canvas-to-blob" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/yii2-pjax" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/admin-lte" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/sifter" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/html5shiv" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/js-cropbox" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/chartjs" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/slick-carousel" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/jquery-ui" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/codemirror" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/punycode" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/jquery-slimscroll" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/x-editable" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/eonasdan-bootstrap-datetimepicker" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/inputmask" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/mpdf/mpdf" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/ace-builds" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/blueimp-load-image" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/imagine/imagine" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/branchonline/yii2-joyride" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/mikehaertl/php-shellcommand" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/php-console/php-console" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/codeception/phpunit-wrapper" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/codeception/verify" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/codeception/specify" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/codeception/stub" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/facebook/webdriver" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/paulzi/yii2-adjacency-list" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/paulzi/yii2-sortable" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/supplyhog/yii2-clipboardjs" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/league/uri-manipulations" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/tikaraj21/newsletter" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/league/uri-parser" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/league/uri-schemes" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/league/uri-interfaces" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/phpspec/php-diff" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/league/uri-components" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/league/glide" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/setasign/fpdi" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yiisoft/yii2" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/creocoder/yii2-nested-sets" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/ezyang/htmlpurifier" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/codeception/codeception" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/cebe/markdown" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/friendsofphp/php-cs-fixer" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/cmrcx/phptidy" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/league/uri-hostname-parser" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yii2mod/yii2-behaviors" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yii2mod/yii2-comments" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yii2mod/yii2-editable" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/mobiledetect/mobiledetectlib" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/ruskid/yii2-csv-importer" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yii2mod/yii2-enum" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bupy7/yii2-widget-cropbox" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yii2mod/yii2-moderation" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/sjaakp/yii2-telex" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/php-cs-fixer/diff" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/skeeks/yii2-mobile-detect" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/insolita/yii2-migration-generator" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/markbaker/matrix" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/markbaker/complex" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/2amigos/yii2-ckeditor-widget" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/2amigos/yii2-selectize-widget" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/2amigos/yii2-translateable-behavior" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/2amigos/yii2-taggable-behavior" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/evgeniyrru/yii2-slick" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/2amigos/yii2-type-ahead-widget" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/2amigos/yii2-chartjs-widget" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/phpunit/phpunit-mock-objects" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/phpunit/php-code-coverage" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="862" />
+    <option name="y" value="25" />
+    <option name="width" value="818" />
+    <option name="height" value="1025" />
+  </component>
+  <component name="ProjectId" id="1UQcuNrUwPhCm8LyiNGyc1vnzIZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="7f00e8d2-37ab-4927-a68c-0207eed2d68f" name="Default" comment="" />
       <created>1521047704823</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1521047704823</updated>
+      <workItem from="1573849336698" duration="535000" />
+      <workItem from="1575292484395" duration="7213000" />
+      <workItem from="1581694821037" duration="4755000" />
     </task>
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="521" y="275" width="751" height="576" key="find.popup" timestamp="1581695735430">
+      <screen x="70" y="28" width="1610" height="1022" />
+    </state>
+    <state x="519" y="274" width="752" height="526" key="find.popup/67.27.1613.1023@67.27.1613.1023" timestamp="1575296412925" />
+    <state x="521" y="275" width="751" height="576" key="find.popup/70.28.1610.1022@70.28.1610.1022" timestamp="1581695735430" />
   </component>
 </project>
