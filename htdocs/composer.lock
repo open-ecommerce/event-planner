@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "68394e58e8245cad3e477db3603c58f1",
@@ -220,14 +220,14 @@
             ],
             "authors": [
                 {
-                    "name": "2amigOS! Consulting Group",
-                    "email": "hola@2amigos.us",
-                    "homepage": "http://2amigos.us",
+                    "name": "Alexander Kochetov",
+                    "email": "creocoder@gmail.com",
                     "role": "Developer"
                 },
                 {
-                    "name": "Alexander Kochetov",
-                    "email": "creocoder@gmail.com",
+                    "name": "2amigOS! Consulting Group",
+                    "email": "hola@2amigos.us",
+                    "homepage": "http://2amigos.us",
                     "role": "Developer"
                 }
             ],
@@ -2347,23 +2347,23 @@
         },
         {
             "name": "ezyang/htmlpurifier",
-            "version": "v4.10.0",
+            "version": "v4.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "d85d39da4576a6934b72480be6978fb10c860021"
+                "reference": "08e27c97e4c6ed02f37c5b2b20488046c8d90d75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/d85d39da4576a6934b72480be6978fb10c860021",
-                "reference": "d85d39da4576a6934b72480be6978fb10c860021",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/08e27c97e4c6ed02f37c5b2b20488046c8d90d75",
+                "reference": "08e27c97e4c6ed02f37c5b2b20488046c8d90d75",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2"
             },
             "require-dev": {
-                "simpletest/simpletest": "^1.1"
+                "simpletest/simpletest": "dev-master#72de02a7b80c6bb8864ef9bf66d41d2f58f826bd"
             },
             "type": "library",
             "autoload": {
@@ -2372,11 +2372,14 @@
                 },
                 "files": [
                     "library/HTMLPurifier.composer.php"
+                ],
+                "exclude-from-classmap": [
+                    "/library/HTMLPurifier/Language/"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "LGPL"
+                "LGPL-2.1-or-later"
             ],
             "authors": [
                 {
@@ -2390,7 +2393,7 @@
             "keywords": [
                 "html"
             ],
-            "time": "2018-02-23T01:58:20+00:00"
+            "time": "2020-06-29T00:56:53+00:00"
         },
         {
             "name": "fortawesome/font-awesome",
@@ -2971,12 +2974,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/bootstrap-star-rating.git",
-                "reference": "da95c22afca7c7d4aa9d41ea6df6393f0f569201"
+                "reference": "274395ae326a50ea01648e43879a01a256a072dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/bootstrap-star-rating/zipball/da95c22afca7c7d4aa9d41ea6df6393f0f569201",
-                "reference": "da95c22afca7c7d4aa9d41ea6df6393f0f569201",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-star-rating/zipball/274395ae326a50ea01648e43879a01a256a072dd",
+                "reference": "274395ae326a50ea01648e43879a01a256a072dd",
                 "shasum": ""
             },
             "type": "library",
@@ -3007,7 +3010,13 @@
                 "star",
                 "svg"
             ],
-            "time": "2018-11-30T06:21:52+00:00"
+            "funding": [
+                {
+                    "url": "https://opencollective.com/bootstrap-star-rating",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2020-10-29T04:18:51+00:00"
         },
         {
             "name": "kartik-v/bootstrap-tabs-x",
@@ -3059,12 +3068,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/dependent-dropdown.git",
-                "reference": "6aba86f5a33ff031538bfc64e46f9ba524a8f0e1"
+                "reference": "c9e0b2b5b58ad717842396053804f8d0281df1ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/dependent-dropdown/zipball/6aba86f5a33ff031538bfc64e46f9ba524a8f0e1",
-                "reference": "6aba86f5a33ff031538bfc64e46f9ba524a8f0e1",
+                "url": "https://api.github.com/repos/kartik-v/dependent-dropdown/zipball/c9e0b2b5b58ad717842396053804f8d0281df1ae",
+                "reference": "c9e0b2b5b58ad717842396053804f8d0281df1ae",
                 "shasum": ""
             },
             "type": "library",
@@ -3098,7 +3107,13 @@
                 "option",
                 "select"
             ],
-            "time": "2018-11-05T12:48:26+00:00"
+            "funding": [
+                {
+                    "url": "https://opencollective.com/dependent-dropdown",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2019-09-03T03:12:44+00:00"
         },
         {
             "name": "kartik-v/php-date-formatter",
@@ -3314,12 +3329,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-detail-view.git",
-                "reference": "13dab1c4470445de10e5dfd3268028b6b303e171"
+                "reference": "724f71394f8060da956e221cfb1ab26362d3ddde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-detail-view/zipball/13dab1c4470445de10e5dfd3268028b6b303e171",
-                "reference": "13dab1c4470445de10e5dfd3268028b6b303e171",
+                "url": "https://api.github.com/repos/kartik-v/yii2-detail-view/zipball/724f71394f8060da956e221cfb1ab26362d3ddde",
+                "reference": "724f71394f8060da956e221cfb1ab26362d3ddde",
                 "shasum": ""
             },
             "require": {
@@ -3359,7 +3374,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2018-11-21T17:30:58+00:00"
+            "time": "2020-10-05T12:31:36+00:00"
         },
         {
             "name": "kartik-v/yii2-dialog",
@@ -4009,12 +4024,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-tree-manager.git",
-                "reference": "54c1c56b6d0239a5a6c647f0c0c7090de85db7fd"
+                "reference": "a0ca2bdce4e5669b39aabbd228b03d271f570534"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-tree-manager/zipball/54c1c56b6d0239a5a6c647f0c0c7090de85db7fd",
-                "reference": "54c1c56b6d0239a5a6c647f0c0c7090de85db7fd",
+                "url": "https://api.github.com/repos/kartik-v/yii2-tree-manager/zipball/a0ca2bdce4e5669b39aabbd228b03d271f570534",
+                "reference": "a0ca2bdce4e5669b39aabbd228b03d271f570534",
                 "shasum": ""
             },
             "require": {
@@ -4058,7 +4073,7 @@
                 "tree",
                 "treeview"
             ],
-            "time": "2018-11-29T08:06:49+00:00"
+            "time": "2020-06-18T11:21:50+00:00"
         },
         {
             "name": "kartik-v/yii2-widget-activeform",
@@ -7949,7 +7964,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "backendtea@gmail.com"
+                    "email": "BackEndTea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
@@ -8942,21 +8957,21 @@
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.16",
+            "version": "2.0.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "789de9783d41e6ca10fffc3644a43a764f79b399"
+                "reference": "fd01e747cc66a049ec105048f0ab8dfbdf60bf4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/789de9783d41e6ca10fffc3644a43a764f79b399",
-                "reference": "789de9783d41e6ca10fffc3644a43a764f79b399",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/fd01e747cc66a049ec105048f0ab8dfbdf60bf4b",
+                "reference": "fd01e747cc66a049ec105048f0ab8dfbdf60bf4b",
                 "shasum": ""
             },
             "require": {
                 "bower-asset/inputmask": "~3.2.2 | ~3.3.5",
-                "bower-asset/jquery": "3.3.*@stable | 3.2.*@stable | 3.1.*@stable | 2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable",
+                "bower-asset/jquery": "3.5.*@stable | 3.4.*@stable | 3.3.*@stable | 3.2.*@stable | 3.1.*@stable | 2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable",
                 "bower-asset/punycode": "1.3.*",
                 "bower-asset/yii2-pjax": "~2.0.1",
                 "cebe/markdown": "~1.0.0 | ~1.1.0 | ~1.2.0",
@@ -9038,7 +9053,21 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2019-01-30T23:54:16+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/yiisoft",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/yiisoft",
+                    "type": "open_collective"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/yiisoft/yii2",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-09-14T21:52:10+00:00"
         },
         {
             "name": "yiisoft/yii2-authclient",
@@ -9154,23 +9183,24 @@
         },
         {
             "name": "yiisoft/yii2-composer",
-            "version": "2.0.7",
+            "version": "2.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-composer.git",
-                "reference": "1439e78be1218c492e6cde251ed87d3f128b9534"
+                "reference": "94bb3f66e779e2774f8776d6e1bdeab402940510"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/1439e78be1218c492e6cde251ed87d3f128b9534",
-                "reference": "1439e78be1218c492e6cde251ed87d3f128b9534",
+                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/94bb3f66e779e2774f8776d6e1bdeab402940510",
+                "reference": "94bb3f66e779e2774f8776d6e1bdeab402940510",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0"
+                "composer-plugin-api": "^1.0 | ^2.0"
             },
             "require-dev": {
-                "composer/composer": "^1.0"
+                "composer/composer": "^1.0 | ^2.0@dev",
+                "phpunit/phpunit": "<7"
             },
             "type": "composer-plugin",
             "extra": {
@@ -9204,7 +9234,21 @@
                 "extension installer",
                 "yii2"
             ],
-            "time": "2018-07-05T15:44:47+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/yiisoft",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/yiisoft",
+                    "type": "open_collective"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/yiisoft/yii2-composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-06-24T00:04:01+00:00"
         },
         {
             "name": "yiisoft/yii2-elasticsearch",
@@ -9859,12 +9903,12 @@
             "version": "1.6.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/facebook/php-webdriver.git",
+                "url": "https://github.com/php-webdriver/php-webdriver-archive.git",
                 "reference": "bd8c740097eb9f2fc3735250fc1912bc811a954e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facebook/php-webdriver/zipball/bd8c740097eb9f2fc3735250fc1912bc811a954e",
+                "url": "https://api.github.com/repos/php-webdriver/php-webdriver-archive/zipball/bd8c740097eb9f2fc3735250fc1912bc811a954e",
                 "reference": "bd8c740097eb9f2fc3735250fc1912bc811a954e",
                 "shasum": ""
             },
@@ -9912,6 +9956,7 @@
                 "selenium",
                 "webdriver"
             ],
+            "abandoned": "php-webdriver/webdriver",
             "time": "2018-05-16T17:37:13+00:00"
         },
         {
@@ -9962,6 +10007,7 @@
                 "faker",
                 "fixtures"
             ],
+            "abandoned": true,
             "time": "2018-07-12T10:23:15+00:00"
         },
         {
@@ -10644,6 +10690,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2017-11-27T05:48:46+00:00"
         },
         {
@@ -10787,6 +10834,7 @@
                 "mock",
                 "xunit"
             ],
+            "abandoned": true,
             "time": "2018-08-09T05:50:03+00:00"
         },
         {
@@ -11834,5 +11882,6 @@
         "php": ">=5.5.0",
         "ext-intl": "*"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
